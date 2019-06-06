@@ -1,20 +1,41 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+<!-- Gotta wrap inside v-app in order for Vuetify to work! -->
+    <v-app>
+        <v-toolbar color="primary" dark flat app >
+            <v-toolbar-title>Ninad Mohite</v-toolbar-title>
+            <v-spacer></v-spacer>
+
+            <v-toolbar-items>
+                <v-btn flat>About</v-btn>
+                <v-btn flat>Work</v-btn>
+                <v-btn flat>Projects</v-btn>
+                <v-btn flat>Contact</v-btn>
+            </v-toolbar-items>
+        </v-toolbar>
+
+        <v-content class="main_theme">
+            <v-container fluid>
+                <intro/>
+            </v-container>
+        </v-content>
+       
+    </v-app>
+
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<script>
+import intro from "@/components/Intro.vue";
+export default {
+    components:{    
+        intro
+    }
+}
+</script>
+
+<style scoped>
+.main_theme{
+    background: var(--v-primary-base)
 }
 </style>
+
+
