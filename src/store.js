@@ -9,14 +9,18 @@ export default new Vuex.Store({
     sections: [
       'About', 'Work', 'Projects', 'Contact'
     ],
-    aboutData:{
+    IntroData:{
       aboveNameText:"Hey there,",
       nameText:"Ninad Mohite.",
       belowNameText:"One cool thing at a time."
+    },
+    AboutData:{
+      introText:"Well hello there! I'm "
     }
+    
   },
   mutations: {
-
+    
   },
   actions: {
 
@@ -28,8 +32,8 @@ export default new Vuex.Store({
     getSections:function(state){
       return state.sections
     },
-    getAboutData:function(state){
-      return state.aboutData
+    getIntroData:function(state){
+      return state.IntroData
     }
   }
 })
