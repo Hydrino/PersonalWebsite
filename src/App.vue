@@ -14,17 +14,22 @@
         <v-content class="pa-0" >
             <intro/>
             <About v-bind:id="sectionItems[0]"/>
+            <Work v-bind:id="sectionItems[1]"/>
         </v-content>       
     </v-app>
 </template>
 
 <script>
+
 import intro from "@/components/Intro.vue";
-import About from "@/components/About.vue"
+import About from "@/components/About.vue";
+import Work from "@/components/Work.vue";
+
 export default {
     components:{    
         intro,
-        About
+        About,
+        Work
     },
     computed:{
         name(){

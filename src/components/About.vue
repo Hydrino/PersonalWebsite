@@ -16,20 +16,19 @@ export default {
                 <v-layout align-center justify-center row wrap>
                     <v-flex lg4.5 md6 sm8 xs12 > 
                         <span class="section_style display-1 font-weight-bold" >About Me</span><br/><br/>
-                        <div class="main_text" >
-                            <span class="subheading font-weight-light" >Well hello there! I'm {{name}}, a software engineer based in Mumbai, India who loves creating consumer facing applications. I am currently working as a Software Developer in Oyo-Hotels and Home, in Bengaluru. In my free time, I like to develop mobile apps and play basketball!</span><br/><br/>
-                            <span class="subheading font-weight-light">I have done my graduation from National Institute of Technology, Delhi (NIT Delhi) in Computer Science and Engineering. During my time there, I have learnt and developed many projects encompassing various technologies.</span><br/><br/>
-                            <span class="subheading font-weight-light">Here are a few technologies I have worked with: </span><br/><br/>
-                     
+                        <div class="main_text subheading " >
+                            <span>Well hello there! I'm {{name}}, a software engineer based in Mumbai, India who loves creating consumer facing applications. I am currently working as a Software Developer in Oyo-Hotels and Home, in Bengaluru. In my free time, I like to develop mobile apps and play basketball!</span><br/><br/>
+                            <span>I have done my graduation from National Institute of Technology, Delhi (NIT Delhi) in Computer Science and Engineering. During my time there, I have learnt and developed many projects encompassing various technologies.</span><br/><br/>
+                            <span>Here are a few technologies I have worked with: </span><br/><br/>                     
 
-                            <div style="float: left; width: 50%;" class="subheading font-weight-light">
+                            <div style="float: left; width: 50%;" >
                                 <ul>
                                     <li>Android App Development</li>
                                     <li>Mobile App Design</li>
                                     <li>Machine Learning</li>   
                                 </ul>
                             </div>
-                            <div style="float: right; width: 50%;" class="subheading font-weight-light">
+                            <div style="float: right; width: 50%;" >
                                 <ul>    
                                     <li>Blockchain</li>
                                     <li>FireBase</li>
@@ -42,7 +41,7 @@ export default {
                         <v-card hover ripple >
                             <v-img v-bind:src="require('@/assets/dp.jpg')" ></v-img>
                         </v-card>
-                    </v-flex  >
+                    </v-flex>
                 </v-layout>                
             </v-container>
         </v-content>

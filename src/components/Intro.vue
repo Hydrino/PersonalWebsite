@@ -4,7 +4,7 @@
             <v-container class="main_ " fluid fill-height>
                 <v-layout align-center justify-center>
                     <v-flex lg6 md6 sm12 xs12 > 
-                        <span class="subheading  font-weight-light" >{{introData.aboveNameText}}</span><br/>   
+                        <span class="subheading font-weight-light" >{{introData.aboveNameText}}</span><br/>   
                         <span class="display-4 font-weight-medium">{{introData.nameText}}</span><br/>   
                         <span class="font-weight-light headline ">{{introData.belowNameText}}</span><br/>   
                     </v-flex>
