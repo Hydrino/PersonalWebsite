@@ -1,7 +1,7 @@
 <template>
 <!-- Gotta wrap inside v-app in order for Vuetify to work! -->
     <v-app>      
-        <v-toolbar color="primary" dark flat app scroll-off-screen>
+        <v-toolbar color="primary" dark flat app >
             <v-toolbar-title>{{name}}</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items>
@@ -15,6 +15,8 @@
             <intro/>
             <About v-bind:id="sectionItems[0]"/>
             <Work v-bind:id="sectionItems[1]"/>
+            <Projects v-bind:id="sectionItems[2]"/>
+            <Contact v-bind:id="sectionItems[3]"/>
         </v-content>       
     </v-app>
 </template>
@@ -24,12 +26,16 @@
 import intro from "@/components/Intro.vue";
 import About from "@/components/About.vue";
 import Work from "@/components/Work.vue";
+import Projects from "@/components/Projects.vue";
+import Contact from "@/components/Contact.vue"
 
 export default {
     components:{    
         intro,
         About,
-        Work
+        Work,
+        Projects,
+        Contact
     },
     computed:{
         name(){

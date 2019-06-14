@@ -48,6 +48,79 @@ export default new Vuex.Store({
           "I have mentored over 160 students in 4 months since joining.",
         ]
       }
+    ],
+    projectsData:[
+      {
+        name:"Billy, the Maths Star!",
+        description:"Developed an Action on Google (Google Assistant Voice App) called Billy. Billy will ask s" + 
+        "imple maths questions for kids to test their knowledge.",
+        technologies:[
+          "NodeJS", "Actions on Google", "Firebase functions", "Javascript"
+        ],
+        githubLink:"https://github.com/Hydrino/Billy-the-Maths-star",
+        externalLink:null,
+        featured:true
+      },
+      {
+        name:"Slide - Wallpaper SlideShow ",
+        description:"Wallpaper slideshow app that currently has 90 thousand downloads on the Google Play store.",
+        technologies:[
+          "Android", "Java", "XML", "Gradle"
+        ],
+        githubLink:null,
+        externalLink:"https://play.google.com/store/apps/details?id=ninhydrin.ninad.com.slide&hl=en_US",
+        featured:true
+      },
+      {
+        name:"Doodly",
+        description:"Fun app that recognizes doodles drawn by users using Deep Neural Networks.",
+        technologies:[
+          "Convolutional Neural Nets", "Keras", "Python", "Deep Learning"
+        ],
+        githubLink:"https://github.com/Hydrino/Doodly",
+        externalLink:"https://www.dropbox.com/s/ubs60kel94f89xf/doodly.apk?dl=0",
+        featured:true
+      },
+      {
+        name:"Poll",
+        description:"Realtime polling app made for my college to get people's opinion on uploaded issues.",
+        technologies:[
+          "Android", "Firebase Realtime Database", "Kotlin", "RxJava2", "OkHttp3"
+        ],
+        githubLink:"https://github.com/Hydrino/Poll2",
+        externalLink:"https://www.dropbox.com/s/azqfosfw7f46gvo/poll.apk?dl=0",
+        featured:false
+      },
+      {
+        name:"Poll2",
+        description:"Realtime polling app made for my college to get people's opinion on uploaded issues.",
+        technologies:[
+          "Android", "Firebase Realtime Database", "Kotlin", "RxJava2", "OkHttp3"
+        ],
+        githubLink:"https://github.com/Hydrino/Poll2",
+        externalLink:"https://www.dropbox.com/s/azqfosfw7f46gvo/poll.apk?dl=0",
+        featured:false
+      },
+      {
+        name:"Poll3",
+        description:"Realtime polling app made for my college to get people's opinion on uploaded issues.",
+        technologies:[
+          "Android", "Firebase Realtime Database", "Kotlin", "RxJava2", "OkHttp3"
+        ],
+        githubLink:"https://github.com/Hydrino/Poll2",
+        externalLink:"https://www.dropbox.com/s/azqfosfw7f46gvo/poll.apk?dl=0",
+        featured:false
+      },
+      {
+        name:"Poll4",
+        description:"Realtime polling app made for my college to get people's opinion on uploaded issues.",
+        technologies:[
+          "Android", "Firebase Realtime Database", "Kotlin", "RxJava2", "OkHttp3"
+        ],
+        githubLink:"https://github.com/Hydrino/Poll2",
+        externalLink:"https://www.dropbox.com/s/azqfosfw7f46gvo/poll.apk?dl=0",
+        featured:false
+      }      
     ]
     
   },
@@ -69,6 +142,9 @@ export default new Vuex.Store({
     },
     getWorkData(state){
       return state.WorkData;
+    },
+    getProjectsData(state){
+      return state.projectsData;
     }
   }
 })
