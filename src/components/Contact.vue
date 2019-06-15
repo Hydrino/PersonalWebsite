@@ -7,7 +7,7 @@ export default {
 <template>
     <v-app>
         <v-content class="pa-0" >
-            <v-container class="main_ pa-0" fluid fill-height >
+            <v-container class="main_ " fluid fill-height >
                 <v-layout row wrap justify-center align-content-center>
 
                     <v-flex offset-md2 xs12 >
