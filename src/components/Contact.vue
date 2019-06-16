@@ -20,7 +20,7 @@ export default {
                     </v-flex>
 
                     <v-flex xs8 class="text-xs-center" >
-                        <br/><br/><span :class="{'headline': $vuetify.breakpoint.xs,'display-1': $vuetify.breakpoint.sm, 'display-3': $vuetify.breakpoint.md, 'display-3': $vuetify.breakpoint.lg, 'display-4': $vuetify.breakpoint.xl}">mohiteninad15@gmail.com</span>
+                        <br/><br/><span :class="{'subheading': $vuetify.breakpoint.xs,'display-1': $vuetify.breakpoint.sm, 'display-3': $vuetify.breakpoint.md, 'display-3': $vuetify.breakpoint.lg, 'display-4': $vuetify.breakpoint.xl}">mohiteninad15@gmail.com</span>
                     </v-flex>
 
                 </v-layout>

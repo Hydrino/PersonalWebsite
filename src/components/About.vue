@@ -1,9 +1,7 @@
 <script>
 export default {
-    computed:{
-        name(){
-           return this.$store.getters.getName
-        }
+    props:{
+        name:String
     }
 }
 </script>

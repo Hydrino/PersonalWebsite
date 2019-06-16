@@ -17,24 +17,12 @@
 
 <script>
 export default {
-    computed:{
-        introData(){
-            return this.$store.getters.getIntroData
-        }
+    props:{
+        introData:Object
     }
 }
 </script>
 
-<style>
-.main_{
-    background: var(--v-primary-base);
-    color: var(--v-secondary-base);
-    padding: 0pt;
-}
-/* .test{
-    background: blue
-} */
-</style>
 
 
 
