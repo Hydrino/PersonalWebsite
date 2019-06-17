@@ -14,7 +14,7 @@
             <!-- so will only show for larger screens -->
             <v-toolbar-items class="hidden-sm-and-down">  
                 <v-btn flat v-for="i in sectionItems.length" v-bind:key="sectionItems[i-1]" @click="$vuetify.goTo('#' + sectionItems[i-1])">{{sectionItems[i-1]}}</v-btn>
-                <v-btn outline color="secondary" href="https://drive.google.com/open?id=1V8K3YJh6OgVksl1p1GEVwgXnIqqZStnE" target="_blank">Resume</v-btn>
+                <v-btn outline color="secondary" href="https://brittanychiang.com/resume.pdf" target="_blank">Resume</v-btn>
             </v-toolbar-items>
 
             <!-- for smaller screens we will use menu -->
@@ -29,7 +29,7 @@
                         </v-list-tile-content>
                     </v-list-tile>
 
-                    <v-list-tile href="https://drive.google.com/open?id=1V8K3YJh6OgVksl1p1GEVwgXnIqqZStnE" target="_blank">
+                    <v-list-tile href="@/assets/resume.pdf" target="_blank">
                         <v-list-tile-content>
                             <v-list-tile-title >Resume</v-list-tile-title>
                         </v-list-tile-content>
@@ -42,7 +42,7 @@
         <!-- <v-content> provides default top padding which has to be removed -->
         <v-content class="pa-0" >
             <Intro id="Intro" v-bind:introData="introData" />
-            <About v-bind:id="sectionItems[0]" v-bind:name="name"/>
+            <About v-bind:id="sectionItems[0]" v-bind:aboutData="aboutData"/>
             <Work v-bind:id="sectionItems[1]"/>
             <Projects v-bind:id="sectionItems[2]"/>
             <Contact v-bind:id="sectionItems[3]"/>
@@ -78,6 +78,12 @@ export default {
         },
         introData(){
             return this.$store.getters.getIntroData
+        },
+        resumeLink(){
+            return this.$store.getters.getResumeLink
+        },
+        aboutData(){
+            return this.$store.getters.getAboutData
         }
     }
 }
@@ -88,6 +94,6 @@ export default {
 .main_{
     background: var(--v-primary-base);
     color: var(--v-secondary-base);
-    padding: 0%;
+    padding: 0pt;
 }
 </style>

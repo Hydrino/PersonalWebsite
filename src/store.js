@@ -6,6 +6,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     name: "Ninad Mohite",
+    resumeLink: "https://drive.google.com/open?id=1V8K3YJh6OgVksl1p1GEVwgXnIqqZStnE",
     sections: [
       'About', 'Work', 'Projects', 'Contact'
     ],
@@ -15,7 +16,16 @@ export default new Vuex.Store({
       belowNameText:"One cool thing at a time."
     },
     AboutData:{
-      introText:"Well hello there! I'm "
+      para1: "Well hello there! I'm Ninad Mohite, a software engineer based in Mumbai, India who loves creating consumer " + 
+             "facing applications. I am currently working as a Software Developer in Oyo-Hotels and Home, in Bengaluru. "+
+             "In my free time, I like to develop mobile apps and play basketball! ",
+
+      para2:"I have done my graduation from National Institute of Technology, Delhi (NIT Delhi) in Computer Science and " + 
+            "Engineering. During my time there, I have learnt and developed many projects encompassing various technologies.",
+
+      techStack:[
+        "Android App Development", "Blockchain", "Mobile App Design", "Deep Learning", "FireBase", "VueJS"
+      ]
     },
 
     WorkData:[
@@ -145,6 +155,12 @@ export default new Vuex.Store({
     },
     getProjectsData(state){
       return state.projectsData;
+    },
+    getResumeLink(state){
+      return state.resumeLink;
+    },
+    getAboutData(state){
+      return state.AboutData;
     }
   }
 })
