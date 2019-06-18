@@ -46,8 +46,8 @@ export default {
                     </v-flex>
 
                     <v-flex xl2 lg2 md2 sm4 xs6>
-                        <v-card flat color="primary"    >
-                            <v-img v-bind:src="require('@/assets/dp.jpg')" min-height="312px" min-width="212px"></v-img>
+                        <v-card flat color="primary">
+                            <v-img v-bind:src="require('@/assets/dp.jpg')" min-height="312px" min-width="212px" ></v-img>
                         </v-card>
                     </v-flex>
 

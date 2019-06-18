@@ -2,7 +2,7 @@
 
     <!-- Gotta wrap inside v-app in order for Vuetify to work! -->
     <v-app >      
-        <v-toolbar color="primary" dark app scroll-off-screen scroll-threshold=100>
+        <v-toolbar color="primary" dark app  scroll-threshold=100>
 
             <v-toolbar-title >
                 <span @click="$vuetify.goTo('#Intro')" style="cursor:pointer;" >{{name}}</span>              
