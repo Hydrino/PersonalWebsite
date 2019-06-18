@@ -43,10 +43,35 @@
         <v-content class="pa-0" >
             <Intro id="Intro" v-bind:introData="introData" />
             <About v-bind:id="sectionItems[0]" v-bind:aboutData="aboutData"/>
-            <Work v-bind:id="sectionItems[1]"/>
-            <Projects v-bind:id="sectionItems[2]"/>
+            <Work v-bind:id="sectionItems[1]" v-bind:workData="workData"/>
+            <Projects v-bind:id="sectionItems[2]" v-bind:projectsData="projectsData"/>
             <Contact v-bind:id="sectionItems[3]"/>
-        </v-content>    
+        </v-content>   
+
+        <v-footer dark height="auto" >
+
+            <v-card flat tile width="100%">
+
+                <v-card-text class="text-xs-center">
+                    <v-btn v-for="icon in footerIcons" :key="icon" class="mx-3 white--text" icon>
+                        <v-icon medium>{{ icon }}</v-icon>
+                    </v-btn>
+                </v-card-text>
+
+                <v-divider></v-divider>
+
+                <v-card-text class="text-xs-center">
+                    Designed and Built by Ninad Mohite.<br/>
+
+                    <v-btn flat icon>
+                        <v-icon color="secondary">fa fa-code-branch</v-icon>
+                    </v-btn>
+
+                </v-card-text>
+
+            </v-card>
+
+        </v-footer> 
 
     </v-app>
 
@@ -84,6 +109,15 @@ export default {
         },
         aboutData(){
             return this.$store.getters.getAboutData
+        },
+        workData(){
+            return this.$store.getters.getWorkData
+        },
+        projectsData(){
+            return this.$store.getters.getProjectsData;
+        },
+        footerIcons(){
+            return this.$store.getters.getFooterIcons;
         }
     }
 }

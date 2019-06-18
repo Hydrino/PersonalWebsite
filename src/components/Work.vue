@@ -1,9 +1,7 @@
 <script>
 export default {
-    computed:{
-        workData(){
-            return this.$store.getters.getWorkData
-        }
+    props:{
+        workData:Object
     }
 }
 </script>
@@ -13,22 +11,23 @@ export default {
     <v-app>
         <v-content class="pa-0">
             <v-container fluid fill-height class="main_">
-                <v-layout align-center >
-                    <v-flex lg6 md6 sm12 xs12 offset-md2> 
+                <v-layout justify-center align-center >
+                    <v-flex xl6 lg8 md8 sm12 xs12 > 
                         <span class="section_style display-2 font-weight-bold" >Where I've worked</span>
                          <v-divider color="accent"/>
                          <br/><br/>
-                        <v-tabs color="primary" dark slider-color="accent">
+                        <v-tabs color="primary" dark slider-color="secondary" >
                             <v-tab v-for="workItem in workData" v-bind:key="workItem.companyName" ripple>
                                 {{workItem.companyName}}
                             </v-tab>
-
+                            
                             <v-tab-item v-for="workItem in workData" v-bind:key="workItem.companyName">
 
                                 <v-card dark flat color="primary" min-height="312px" >
                                     
                                     <v-card-title>
                                         <div>
+                                            <br/>
                                             <span class="headline">{{workItem.role}}</span>
                                             <span class="headline font-weight-light" style="color:var(--v-secondary-base);">
                                                 @{{workItem.companyName}}

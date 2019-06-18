@@ -131,6 +131,12 @@ export default new Vuex.Store({
         externalLink:"https://www.dropbox.com/s/azqfosfw7f46gvo/poll.apk?dl=0",
         featured:false
       }      
+    ],
+    footerIcons:[
+        'fab fa-github',
+        'fab fa-twitter',
+        'fab fa-linkedin',
+        'fab fa-instagram'
     ]
     
   },
@@ -161,6 +167,9 @@ export default new Vuex.Store({
     },
     getAboutData(state){
       return state.AboutData;
+    },
+    getFooterIcons(state){
+      return state.footerIcons;
     }
   }
 })
