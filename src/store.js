@@ -132,11 +132,24 @@ export default new Vuex.Store({
         featured:false
       }      
     ],
-    footerIcons:[
-        'fab fa-github',
-        'fab fa-twitter',
-        'fab fa-linkedin',
-        'fab fa-instagram'
+    footerData:[
+        {
+          icon: 'fab fa-github',
+          link: 'https://github.com/Hydrino'
+        },
+        {
+          icon: 'fab fa-twitter',
+          link: 'https://twitter.com/NinHydrino'
+        },
+        {
+          icon: 'fab fa-linkedin',
+          link: 'https://www.linkedin.com/in/ninadmohite/'
+        },
+        {
+          icon: 'fab fa-instagram',
+          link: 'https://www.instagram.com/_ninhydrin/'
+        }              
+        
     ]
     
   },
@@ -168,8 +181,8 @@ export default new Vuex.Store({
     getAboutData(state){
       return state.AboutData;
     },
-    getFooterIcons(state){
-      return state.footerIcons;
+    getFooterData(state){
+      return state.footerData;
     }
   }
 })

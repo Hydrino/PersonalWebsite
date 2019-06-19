@@ -53,9 +53,16 @@
             <v-card flat tile width="100%">
 
                 <v-card-text class="text-xs-center">
-                    <v-btn v-for="icon in footerIcons" :key="icon" class="mx-3 white--text" icon>
-                        <v-icon medium>{{ icon }}</v-icon>
+                    
+                    <v-btn   v-for="data in footerData" :key="data.link" class="mx-3 white--text " 
+                        icon v-bind:href="data.link" target="_blank" >
+                        <v-hover>
+                            <v-icon slot-scope="{hover}" medium v-bind:color="`${hover? 'secondary' : 'white'}`" >
+                                {{ data.icon }}
+                            </v-icon>
+                        </v-hover>
                     </v-btn>
+                    
                 </v-card-text>
 
                 <v-divider></v-divider>
@@ -63,7 +70,7 @@
                 <v-card-text class="text-xs-center">
                     Designed and Built by Ninad Mohite.<br/>
 
-                    <v-btn flat icon>
+                    <v-btn flat icon href="https://github.com/Hydrino/PersonalWebsite">
                         <v-icon color="secondary">fa fa-code-branch</v-icon>
                     </v-btn>
 
@@ -116,8 +123,8 @@ export default {
         projectsData(){
             return this.$store.getters.getProjectsData;
         },
-        footerIcons(){
-            return this.$store.getters.getFooterIcons;
+        footerData(){
+            return this.$store.getters.getFooterData;
         }
     }
 }
