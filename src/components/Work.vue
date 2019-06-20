@@ -1,7 +1,7 @@
 <script>
 export default {
     props:{
-        workData:Object
+        workData:Array
     }
 }
 </script>

@@ -11,9 +11,11 @@ export default new Vuex.Store({
       'About', 'Work', 'Projects', 'Contact'
     ],
     IntroData:{
-      aboveNameText:"Hey there,",
+      aboveNameText:"Hello! I am",
       nameText:"Ninad Mohite.",
-      belowNameText:"One cool thing at a time."
+      tagLine:'I create stuff.',
+      belowNameText:"I'm a Software Developer based in Bengaluru, India. I specialize in build"+
+      "ing high quality software products that consumers just love."
     },
     AboutData:{
       para1: "Well hello there! I'm Ninad Mohite, a software engineer based in Mumbai, India who loves creating consumer " + 

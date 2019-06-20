@@ -10,8 +10,8 @@ import 'vuetify/dist/vuetify.min.css'
 Vue.use(Vuetify, {
   theme:{
     primary: '#37474F ',
-    secondary: '#64FFDA',
-    accent: '#FFD740'
+    secondary: '#66bb6a',
+    accent: '#64ffda'
   },
   options:{
     customProperties: true

@@ -1,11 +1,12 @@
 <template>
 
     <!-- Gotta wrap inside v-app in order for Vuetify to work! -->
-    <v-app >      
-        <v-toolbar color="primary" dark app  scroll-threshold=100>
+    <v-app >   
+   
+        <v-toolbar color="primary" dark app height="72em" >
 
-            <v-toolbar-title >
-                <span @click="$vuetify.goTo('#Intro')" style="cursor:pointer;" >{{name}}</span>              
+            <v-toolbar-title style="color:white;">
+                <span @click="$vuetify.goTo('#Intro')" style="cursor:pointer;opacity:0.6;" class="display-1 font-weight-bold">{{name}}</span>              
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
@@ -14,7 +15,7 @@
             <!-- so will only show for larger screens -->
             <v-toolbar-items class="hidden-sm-and-down">  
                 <v-btn flat v-for="i in sectionItems.length" v-bind:key="sectionItems[i-1]" @click="$vuetify.goTo('#' + sectionItems[i-1])">{{sectionItems[i-1]}}</v-btn>
-                <v-btn outline color="secondary" href="https://brittanychiang.com/resume.pdf" target="_blank">Resume</v-btn>
+                <v-btn outline color="accent" href="https://brittanychiang.com/resume.pdf" target="_blank">Resume</v-btn>
             </v-toolbar-items>
 
             <!-- for smaller screens we will use menu -->
@@ -53,15 +54,16 @@
             <v-card flat tile width="100%">
 
                 <v-card-text class="text-xs-center">
-                    
+
                     <v-btn   v-for="data in footerData" :key="data.link" class="mx-3 white--text " 
-                        icon v-bind:href="data.link" target="_blank" >
-                        <v-hover>
-                            <v-icon slot-scope="{hover}" medium v-bind:color="`${hover? 'secondary' : 'white'}`" >
+                        icon v-bind:href="data.link" target="_blank" >             
+                        <v-hover>               
+                            <v-icon medium slot-scope="{hover}" v-bind:color="`${hover? 'secondary' : 'white'}`" >
                                 {{ data.icon }}
                             </v-icon>
                         </v-hover>
-                    </v-btn>
+                        
+                    </v-btn>                   
                     
                 </v-card-text>
 
@@ -70,7 +72,7 @@
                 <v-card-text class="text-xs-center">
                     Designed and Built by Ninad Mohite.<br/>
 
-                    <v-btn flat icon href="https://github.com/Hydrino/PersonalWebsite">
+                    <v-btn flat icon href="https://github.com/Hydrino/PersonalWebsite" target="_blank">
                         <v-icon color="secondary">fa fa-code-branch</v-icon>
                     </v-btn>
 
@@ -132,9 +134,10 @@ export default {
 </script>
 
 <style>
+/* main style/theme of the webpage */
 .main_{
     background: var(--v-primary-base);
-    color: var(--v-secondary-base);
+    color: #b0bec5;
     padding: 0pt;
 }
 </style>
