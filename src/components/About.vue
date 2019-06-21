@@ -11,6 +11,12 @@ export default {
     computed:{
         length(){
             return this.aboutData.techStack.length;
+        },
+        currentJobHtml(){
+            return '<span style="color:var(--v-accent-base)">Oyo Hotels and Home.</span>'
+        },
+        college(){
+            return '<span style="color:var(--v-accent-base)">National Institute of Technology, Delhi (NIT Delhi)</span>'
         }
     }
 }
@@ -24,12 +30,29 @@ export default {
                 <v-layout align-center justify-center row wrap>
 
                     <v-flex xl6 lg6 md6 sm8 xs12 style="padding-right:10%; margin-bottom:64px;" > 
-                        <span class="section_style display-2 font-weight-bold" >About Me</span>
-                        <v-divider color="accent"/>
+
+                        <span class="font-weight-bold white--text" :class="{
+                            'display-1': $vuetify.breakpoint.smAndDown,
+                            'display-2': $vuetify.breakpoint.mdAndUp,
+                        }" style="opacity:0.9">
+                            About Me
+                        </span>
+                        <v-divider style="background:var(--v-accent-base)"/>
                         <br/><br/>
-                        <div class="main_text subheading " style="text-align:justify;">
-                            <span>{{aboutData.para1}}</span><br/><br/>
-                            <span>{{aboutData.para2}}</span><br/><br/>
+
+                        <div class="subheading" style="text-align:justify; line-height:26px;">
+
+                            <span>
+                                    Well hello there! I'm Ninad Mohite, a software engineer based in Bengaluru, India who loves creating consumer 
+                                    facing applications. I am currently working as a Software Developer in <span v-html="currentJobHtml"></span>
+                                    In my free time, I like to develop mobile applications and play basketball! 
+                            </span><br/><br/>
+
+                            <span>
+                                I have done my graduation from <span v-html="college"></span> in Computer Science and
+                                Engineering. During my time there, I have learnt and developed many projects encompassing various technologies.
+                            </span><br/><br/>
+
                             <span>Here are a few technologies I have worked with: </span><br/><br/>                     
 
                             <div style="float: left; width: 50%;text-align:left;line-height:28px;" >
@@ -43,11 +66,12 @@ export default {
                                 </ul>
                             </div>
                         </div>
+
                     </v-flex>
 
-                    <v-flex xl2 lg2 md2 sm4 xs6>
-                        <v-card flat color="primary">
-                            <v-img v-bind:src="require('@/assets/dp.jpg')" min-height="312px" min-width="212px" ></v-img>
+                    <v-flex xl2 lg2 md2 sm4 xs6 >
+                        <v-card hover flat tile >
+                            <v-img v-bind:src="require('@/assets/dp.jpg')" class="image_style" min-height="312px" min-width="212px" ></v-img>
                         </v-card>
                     </v-flex>
 
@@ -57,16 +81,24 @@ export default {
     </v-app>
 </template>
 
-<style>
-
-.section_style{
-    color: var(--v-accent-base);
+<style scoped>
+ul {
+  list-style: none; /* Remove default bullets */
 }
 
-.main_text{
-    opacity: 0.75;
-    font-family: 'Monda', sans-serif;
+ul li::before {
+  content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--v-accent-base); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */ 
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
+.image_style{
+    border-style: solid;
+    border-width: 1px;
+    border-color:var(--v-accent-base);
+}
 </style>
 

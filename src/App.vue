@@ -41,7 +41,7 @@
         </v-toolbar>
 
         <!-- <v-content> provides default top padding which has to be removed -->
-        <v-content class="pa-0" >
+        <v-content class="pa-0">
             <Intro id="Intro" v-bind:introData="introData" />
             <About v-bind:id="sectionItems[0]" v-bind:aboutData="aboutData"/>
             <Work v-bind:id="sectionItems[1]" v-bind:workData="workData"/>
@@ -140,4 +140,5 @@ export default {
     color: #b0bec5;
     padding: 0pt;
 }
+
 </style>

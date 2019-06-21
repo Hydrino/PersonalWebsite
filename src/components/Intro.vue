@@ -9,7 +9,7 @@
                         <span :class="{
                             'body-1': $vuetify.breakpoint.smAndDown,
                             'title': $vuetify.breakpoint.mdAndUp
-                        }" class="font-weight-light">
+                        }" class="font-weight-light accent--text">
                         {{introData.aboveNameText}}</span><br/>   
 
 
@@ -34,7 +34,12 @@
                     </v-flex>
 
                     <v-flex xs10 sm10 md4 lg4 xl4 offset-md3>
-                       <span class="subheading" style="line-height:26px;">{{introData.belowNameText}}</span>     
+                       <span class="subheading" style="line-height:26px;">{{introData.belowNameText}}</span>
+                    </v-flex>
+
+                    <v-flex xs12 offset-md3 style="padding-top:32px;">
+                        <v-btn outline color="accent" style="height:100%;margin:14px" class="text-capitalize font-weight-light"
+                        @click="$vuetify.goTo('#Contact')">Get in touch</v-btn>
                     </v-flex>
                 </v-layout>
             </v-container>

@@ -18,7 +18,7 @@ export default new Vuex.Store({
       "ing high quality software products that consumers just love."
     },
     AboutData:{
-      para1: "Well hello there! I'm Ninad Mohite, a software engineer based in Mumbai, India who loves creating consumer " + 
+      para1: "Well hello there! I'm Ninad Mohite, a software engineer based in Bengaluru, India who loves creating consumer " + 
              "facing applications. I am currently working as a Software Developer in Oyo-Hotels and Home, in Bengaluru. "+
              "In my free time, I like to develop mobile apps and play basketball! ",
 
@@ -27,7 +27,9 @@ export default new Vuex.Store({
 
       techStack:[
         "Android App Development", "Blockchain", "Mobile App Design", "Deep Learning", "FireBase", "VueJS"
-      ]
+      ],
+
+      currentJob: "Oyo-Hotels and Home, in Bengaluru. "
     },
 
     WorkData:[
