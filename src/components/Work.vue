@@ -47,7 +47,7 @@ export default {
                                     </v-card-title>
 
                                     <v-card-text>
-                                        <ul style="line-height:32px;" class="subheading font-weight-light">
+                                        <ul style="line-height:32px;" class="subheading">
                                             <li v-for=" highlight in workItem.highlights" v-bind:key="highlight" class="main_">{{highlight}}</li>
                                         </ul>                           
                                     </v-card-text>
