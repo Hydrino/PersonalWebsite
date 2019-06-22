@@ -82,23 +82,11 @@ export default {
 </template>
 
 <style scoped>
-ul {
-  list-style: none; /* Remove default bullets */
-}
-
-ul li::before {
-  content: "\2023";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: var(--v-accent-base); /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */ 
-  width: 1em; /* Also needed for space (tweak if needed) */
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-}
 
 .image_style{
     border-style: solid;
     border-width: 1px;
-    border-color:var(--v-accent-base);
+    border-color:var(--v-secondary-base);
 }
 </style>
 
