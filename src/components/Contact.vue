@@ -37,7 +37,7 @@ export default {
                     <v-flex xs12 class="text-xs-center" >
                         <br/><br/>
 
-                        <v-tooltip bottom >
+                        <v-tooltip bottom dark color="secondary" >
                             <template v-slot:activator="{ on }">
                                 <span v-on="on" :class="{'title': $vuetify.breakpoint.xs,'display-1': $vuetify.breakpoint.sm,
                                                             'display-2': $vuetify.breakpoint.md, 'display-3': $vuetify.breakpoint.lg, 
@@ -49,7 +49,7 @@ export default {
                             <span>Click to copy</span>
                         </v-tooltip>
 
-                        <v-snackbar v-model="snackbar" left timeout="1000">
+                        <v-snackbar v-model="snackbar" left timeout="1000" color="secondary">
                             Copied to clipboard.
                         </v-snackbar>
                         
