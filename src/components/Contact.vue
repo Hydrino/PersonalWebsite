@@ -4,6 +4,9 @@ export default {
         return{
             snackbar:false
         }
+    },
+    props:{
+        footerData:Array
     }
 }
 </script>
@@ -58,6 +61,38 @@ export default {
                 </v-layout>
             </v-container>      
         </v-content>
+
+        <v-footer dark height="auto" >
+
+            <v-card flat tile width="100%">
+
+                <v-card-text class="text-xs-center">
+
+                    <v-btn   v-for="data in footerData" :key="data.link" class="mx-3 white--text " 
+                        icon v-bind:href="data.link" target="_blank" >             
+                        <v-hover>               
+                            <v-icon medium slot-scope="{hover}" v-bind:color="`${hover? 'secondary' : 'white'}`" >
+                                {{ data.icon }}
+                            </v-icon>
+                        </v-hover>
+                        
+                    </v-btn>                   
+                    
+                </v-card-text>
+
+                <v-divider></v-divider>
+
+                <v-card-text class="text-xs-center">
+                    Designed and Built by Ninad Mohite.<br/>
+
+                    <v-btn flat icon href="https://github.com/Hydrino/PersonalWebsite" target="_blank">
+                        <v-icon color="secondary">fa fa-code-branch</v-icon>
+                    </v-btn>
+
+                </v-card-text>
+
+            </v-card>
+        </v-footer> 
     </v-app>
 </template>
 

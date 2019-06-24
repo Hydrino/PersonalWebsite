@@ -9,7 +9,7 @@
                         <span :class="{
                             'body-1': $vuetify.breakpoint.smAndDown,
                             'title': $vuetify.breakpoint.mdAndUp
-                        }" class="font-weight-light accent--text">
+                        }" class="font-weight-light ">
                         {{introData.aboveNameText}}</span><br/>   
 
 

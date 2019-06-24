@@ -3,7 +3,7 @@
     <!-- Gotta wrap inside v-app in order for Vuetify to work! -->
     <v-app >   
    
-        <v-toolbar color="primary" dark app height="72em" >
+        <v-toolbar color="primary" dark app height="72em">
 
             <v-toolbar-title style="color:white;">
                 <span @click="$vuetify.goTo('#Intro')" style="cursor:pointer;opacity:0.6;" class="display-1 font-weight-bold">{{name}}</span>              
@@ -46,41 +46,8 @@
             <About v-bind:id="sectionItems[0]" v-bind:aboutData="aboutData"/>
             <Work v-bind:id="sectionItems[1]" v-bind:workData="workData"/>
             <Projects v-bind:id="sectionItems[2]" v-bind:projectsData="projectsData"/>
-            <Contact v-bind:id="sectionItems[3]"/>
+            <Contact v-bind:id="sectionItems[3]" v-bind:footerData="footerData"/>
         </v-content>   
-
-        <v-footer dark height="auto" >
-
-            <v-card flat tile width="100%">
-
-                <v-card-text class="text-xs-center">
-
-                    <v-btn   v-for="data in footerData" :key="data.link" class="mx-3 white--text " 
-                        icon v-bind:href="data.link" target="_blank" >             
-                        <v-hover>               
-                            <v-icon medium slot-scope="{hover}" v-bind:color="`${hover? 'secondary' : 'white'}`" >
-                                {{ data.icon }}
-                            </v-icon>
-                        </v-hover>
-                        
-                    </v-btn>                   
-                    
-                </v-card-text>
-
-                <v-divider></v-divider>
-
-                <v-card-text class="text-xs-center">
-                    Designed and Built by Ninad Mohite.<br/>
-
-                    <v-btn flat icon href="https://github.com/Hydrino/PersonalWebsite" target="_blank">
-                        <v-icon color="secondary">fa fa-code-branch</v-icon>
-                    </v-btn>
-
-                </v-card-text>
-
-            </v-card>
-
-        </v-footer> 
 
     </v-app>
 
