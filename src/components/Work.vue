@@ -22,7 +22,10 @@ export default {
                             }" style="opacity:0.9" >
                                 Where I've worked
                         </span>
-                         <v-divider style="background:var(--v-accent-base)"/>
+
+                        <v-flex xs12 sm10 md10 lg10 xl10>
+                            <v-divider style="background:var(--v-accent-base)"/>
+                        </v-flex>
                         <br/><br/>
 
                         <v-tabs color="primary" dark slider-color="secondary">

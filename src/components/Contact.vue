@@ -25,10 +25,11 @@ export default {
                             Reach out!
                         </span>
 
-                        <v-divider style="background:var(--v-accent-base)"/> <br/><br/>
+                        <v-flex xs12 sm10 md10 lg10 xl8>
+                            <v-divider style="background:var(--v-accent-base)"/> <br/><br/>
+                        </v-flex>
 
                     </v-flex>
-
                    
                     <v-flex xs10 sm8 md6 lg6 xl4 class="text-xs-center">
                         <span class="subheading" style="line-height:28px;" >
