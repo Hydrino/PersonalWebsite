@@ -13,7 +13,7 @@ export default {
             return this.aboutData.techStack.length;
         },
         currentJobHtml(){
-            return '<span style="color:var(--v-accent-base)">Oyo Hotels and Home.</span>'
+            return '<span style="color:var(--v-accent-base)">Oyo Hotels and Home</span>'
         },
         college(){
             return '<span style="color:var(--v-accent-base)">National Institute of Technology, Delhi (NIT Delhi)</span>'
@@ -43,24 +43,26 @@ export default {
                         <div class="subheading" style="text-align:justify; line-height:26px;">
 
                             <span>
-                                    Well hello there! I'm Ninad Mohite, a software engineer based in Bengaluru, India who loves creating consumer 
-                                    facing applications. I am currently working as a Software Developer in <span v-html="currentJobHtml"></span>
-                                    In my free time, I like to develop mobile applications and play basketball! 
+                                    Hello there! I'm Ninad Mohite, a software developer who loves creating consumer 
+                                    facing applications.  I have done my Bachelors from <span v-html="college"></span> in Computer Science and
+                                    Engineering. During my time there, I have learnt and developed many projects encompassing various technologies.
                             </span><br/><br/>
 
                             <span>
-                                I have done my graduation from <span v-html="college"></span> in Computer Science and
-                                Engineering. During my time there, I have learnt and developed many projects encompassing various technologies.
+                                    Shortly after graduating, I started working as a Software Developer in <span v-html="currentJobHtml"></span>, 
+                                    where I am currently working.
+                                    In my free time, you can find me developing Android apps or playing Basketball.
+                               
                             </span><br/><br/>
 
                             <span>Here are a few technologies I have worked with: </span><br/><br/>                     
 
-                            <div style="float: left; width: 50%;text-align:left;line-height:28px;" >
+                            <div style="float: left; width: 50%;text-align:left;line-height:30px;" >
                                 <ul>
                                     <li v-for="i in length/2" v-bind:key="i">{{aboutData.techStack[i-1]}}</li>
                                 </ul>
                             </div>
-                            <div style="float: right; width: 50%; text-align:left;line-height:28px;" >
+                            <div style="float: right; width: 50%; text-align:left;line-height:30px;" >
                                 <ul>
                                     <li v-for="i in range(length/2, length)" v-bind:key="i">{{aboutData.techStack[i]}}</li>
                                 </ul>
@@ -70,7 +72,7 @@ export default {
                     </v-flex>
 
                     <v-flex xl2 lg2 md2 sm4 xs6 >
-                        <v-card hover flat tile >
+                        <v-card hover flat tile style="cursor:default;">
                             <v-img v-bind:src="require('@/assets/dp.jpg')" class="image_style" min-height="312px" min-width="212px" ></v-img>
                         </v-card>
                     </v-flex>

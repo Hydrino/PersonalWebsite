@@ -13,12 +13,12 @@ export default new Vuex.Store({
     IntroData:{
       aboveNameText:"Hello! I am",
       nameText:"Ninad Mohite.",
-      tagLine:'I create stuff.',
-      belowNameText:"I'm a Software Developer based in Bengaluru, India. I specialize in build"+
-      "ing high quality software products that consumers just love."
+      tagLine:'I build stuff.',
+      belowNameText:"I'm a Software Developer based in Mumbai, India. I specialize in build"+
+      "ing and designing high quality, robust software products. "
     },
     AboutData:{
-      para1: "Well hello there! I'm Ninad Mohite, a software engineer based in Bengaluru, India who loves creating consumer " + 
+      para1: "Hello there! I'm Ninad Mohite, a software engineer, currently based in Mumbai who loves creating consumer " + 
              "facing applications. I am currently working as a Software Developer in Oyo-Hotels and Home, in Bengaluru. "+
              "In my free time, I like to develop mobile apps and play basketball! ",
 
@@ -26,12 +26,13 @@ export default new Vuex.Store({
             "Engineering. During my time there, I have learnt and developed many projects encompassing various technologies.",
 
       techStack:[
-        "Android App Development", "Blockchain", "Mobile App Design", "Deep Learning", "FireBase", "VueJS"
+        "Android App Development", "Actions on Google"       , "Machine Learning/Deep Learning", "FireBase", 
+        "Artificial Intelligence", "Blockchain"              , "Mobile App Designing"          , "VueJS"        
       ],
 
       currentJob: "Oyo-Hotels and Home, in Bengaluru. "
     },
-
+    
     WorkData:[
       {
         companyName:"Oyo-Hotels and Homes",
