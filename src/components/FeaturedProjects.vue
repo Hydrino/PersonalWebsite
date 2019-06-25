@@ -41,29 +41,55 @@ export default {
                        
                        <v-card color="transparent" flat >
 
-                           <v-parallax v-if=$vuetify.breakpoint.xsOnly :src="require('@/assets/demoSC.png')" 
+                           <v-parallax v-if=$vuetify.breakpoint.xsOnly 
+                                :src="require('@/assets/demoSC.png')" 
                                 style="margin:16px;">
 
-                                <v-layout align-center justify-end > 
-                                   <div style="text-align:end; background:transparent;" >
+                                <v-layout align-center> 
 
-                                        <span class="accent--text">Featured Project</span><br/>
+                                   <div style="background:transparent;" 
+                                   :style="{'text-align' : idx%2===0? 'end' : 'start'}">
 
-                                        <span class="headline font-weight-medium">{{project.name}}</span><br/><br/>
+                                        <span class="accent--text font-weight-bold text-uppercase caption"
+                                                style="font-family: 'Monda', sans-serif;">
+                                            Featured Project
+                                        </span>
+                                        <br/>
+
+                                        <span class="headline font-weight-bold">{{project.name}}</span>
+                                        <br/><br/>
 
                                         <v-card color="secondary" tile dark>
                                             <v-card-text>
-                                                <span>{{project.description}}</span>
+                                                <span >{{project.description}}</span>
                                             </v-card-text>
                                         </v-card>
-
                                         <br/>
                                         
                                         <ul>
                                             <li v-for="tech in project.technologies" :key="tech">{{tech}}</li>
                                         </ul>
+                                        <br/>                                  
+
                                     </div>                               
                                 </v-layout>
+
+                                <div :style="{'text-align' : idx%2===0? 'end' : 'start'}" 
+                                    style="padding-bottom:16px;">
+
+                                    <v-btn v-if="project.githubLink!==null" icon 
+                                    :href="project.githubLink" target="_blank"
+                                    small>
+                                        <v-icon color="accent">fab fa-github</v-icon>
+                                    </v-btn>
+
+                                    <v-btn v-if="project.externalLink!==null" icon 
+                                    :href="project.externalLink" target="_blank"
+                                    small>
+                                        <v-icon color="accent">open_in_new</v-icon>
+                                    </v-btn>
+                                </div>
+
                            </v-parallax>
 
                            <v-layout v-else align-center style="margin-bottom: 124px; padding:20px">    
@@ -83,7 +109,7 @@ export default {
                                     <span class="display-1 font-weight-bold white--text" style="opacity:0.9;">{{project.name}}</span>
                                     <br/><br/>
                                     
-                                    <v-card color="secondary" tile dark >
+                                    <v-card color="secondary" tile dark hover style="cursor:default;">
                                         <v-card-text>
                                             <span style="line-height:24px;">{{project.description}}</span>
                                         </v-card-text>
