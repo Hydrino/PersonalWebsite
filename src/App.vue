@@ -19,11 +19,11 @@
             </v-toolbar-items>
 
             <!-- for smaller screens we will use menu -->
-            <v-menu class="hidden-md-and-up">
+            <v-menu class="hidden-md-and-up" dark min-width="40%" >
                 <v-toolbar-side-icon slot="activator">
                     <!-- <v-icon>arrow_downward</v-icon> -->
                 </v-toolbar-side-icon>
-                <v-list>
+                <v-list style="background:var(--v-secondary-base);">
                     <v-list-tile v-for="i in sectionItems.length" v-bind:key="sectionItems[i-1]" @click="$vuetify.goTo('#' + sectionItems[i-1])">
                         <v-list-tile-content>
                             <v-list-tile-title>{{ sectionItems[i-1] }}</v-list-tile-title>
