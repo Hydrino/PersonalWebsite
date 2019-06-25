@@ -107,35 +107,45 @@ export default new Vuex.Store({
         featured:false
       },
       {
-        name:"Poll2",
-        description:"Realtime polling app made for my college to get people's opinion on uploaded issues.",
+        name:"MailBox",
+        description:"Android application that lets users send letters to each other.",
         technologies:[
-          "Android", "Firebase Realtime Database", "Kotlin", "RxJava2", "OkHttp3"
+          "Android", "SQL Database", "PHP", "Custom components", "Spring Animations"
         ],
-        githubLink:"https://github.com/Hydrino/Poll2",
-        externalLink:"https://www.dropbox.com/s/azqfosfw7f46gvo/poll.apk?dl=0",
+        githubLink:"https://github.com/Hydrino/MailBox",
+        externalLink:"https://www.dropbox.com/s/0s5j8y64cqyg3rx/mailbox.apk?dl=0",
         featured:false
       },
       {
-        name:"Poll3",
-        description:"Realtime polling app made for my college to get people's opinion on uploaded issues.",
+        name:"ACGAN Cifar10",
+        description:"A PyTorch implementation of Auxiliary Classifier GAN to generate CIFAR10 images. ",
         technologies:[
-          "Android", "Firebase Realtime Database", "Kotlin", "RxJava2", "OkHttp3"
+          "Pytorch", "GANs", "Python", "Deep Neural Nets", "Cifar10"
         ],
-        githubLink:"https://github.com/Hydrino/Poll2",
-        externalLink:"https://www.dropbox.com/s/azqfosfw7f46gvo/poll.apk?dl=0",
+        githubLink:"https://github.com/Hydrino/ACGAN_cifar10",
+        externalLink:null,
         featured:false
       },
       {
-        name:"Poll4",
-        description:"Realtime polling app made for my college to get people's opinion on uploaded issues.",
+        name:"ACGAN MNIST",
+        description:"An Auxiliary Classifier GAN (ACGAN) in pytorch to generate MNIST digits. ",
         technologies:[
-          "Android", "Firebase Realtime Database", "Kotlin", "RxJava2", "OkHttp3"
+          "Pytorch", "GANs", "Python", "Deep Neural Nets", "MNIST"
         ],
-        githubLink:"https://github.com/Hydrino/Poll2",
-        externalLink:"https://www.dropbox.com/s/azqfosfw7f46gvo/poll.apk?dl=0",
+        githubLink:"https://github.com/Hydrino/ACGAN_mnist",
+        externalLink:null,
         featured:false
-      }      
+      },
+      {
+        name:"Personal Website",
+        description:"My personal website using GitHub pages. First time trying my hand at web development.",
+        technologies:[
+          "Pytorch", "GANs", "Python", "Deep Neural Nets", "MNIST"
+        ],
+        githubLink:"https://github.com/Hydrino/PersonalWebsite",
+        externalLink:null,
+        featured:false
+      }   
     ],
     footerData:[
         {

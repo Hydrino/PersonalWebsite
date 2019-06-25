@@ -46,8 +46,8 @@ export default {
                     </v-flex>
 
                     <v-flex class="text-xs-center" xs12 style="margin-top:64px;">
-                        <span class="font-weight-bold text-uppercase"
-                            :class=" $vuetify.breakpoint.xsOnly? 'title' : 'headline' " >
+                        <span class="font-weight-bold text-uppercase "
+                            :class=" $vuetify.breakpoint.xsOnly? 'title' : 'headline' " style="opacity:0.9">
                            Other Projects
                         </span>
                         <br/><br/><br/><br/>
@@ -59,7 +59,8 @@ export default {
                         <v-layout row wrap>
 
                             <v-flex v-for="project in otherProjects" :key="project.name" xs12 sm6 md6 lg4 xl4>
-                                <v-card style="margin:8px;cursor:default;" dark color="#455A64" hover flat>
+                                <v-card style="margin:8px;cursor:default;" dark 
+                                    color="#455A64" hover flat>
 
                                     <v-container fluid fill-height>
                                         <v-layout row wrap>                                            
@@ -91,14 +92,14 @@ export default {
                                                 <br/><br/>
                                             </v-flex>
 
-                                            <v-flex xs12>
+                                            <v-flex xs12 style="height:156px">
                                                 <span style="opacity:0.8;" class="subheading">
                                                     {{project.description}}
                                                 </span>
                                                 <br/><br/><br/>
                                             </v-flex>
 
-                                            <v-flex xs12 justify-start>
+                                            <v-flex xs12 justify-start style="height:40px;overflow:hidden;">
                                                 <ul :class="$vuetify.breakpoint.xsOnly? 'caption': 'body-1'"
                                                     style="opacity:0.7;">
                                                     <li v-for="tech in project.technologies" :key="tech">{{tech}}</li>
