@@ -41,10 +41,10 @@ export default {
                                     <v-card-title>
                                         <div>
                                             <br/>
-                                            <span :class="$vuetify.breakpoint.lgAndUp? 'display-1' : 'headline'">
+                                            <span :class="[$vuetify.breakpoint.lgAndUp? 'display-1' : 'headline', 'font-weight-light']">
                                                 {{workItem.role}}
                                             </span>
-                                            <span :class="$vuetify.breakpoint.lgAndUp? 'display-1' : 'headline'" 
+                                            <span class="headline font-weight-bold" 
                                                 style="color:var(--v-secondary-base);">
                                                 @{{workItem.companyName}}
                                             </span><br/>

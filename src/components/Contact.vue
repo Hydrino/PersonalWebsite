@@ -86,7 +86,7 @@ export default {
                 <v-divider></v-divider>
 
                 <v-card-text class="text-xs-center">
-                    Designed and Built by Ninad Mohite.<br/>
+                    <span>Designed and Built by Ninad Mohite.</span><br/>
 
                     <v-btn flat icon href="https://github.com/Hydrino/PersonalWebsite" target="_blank">
                         <v-icon color="accent">fa fa-code-branch</v-icon>

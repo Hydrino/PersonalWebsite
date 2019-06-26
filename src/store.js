@@ -35,7 +35,7 @@ export default new Vuex.Store({
     
     WorkData:[
       {
-        companyName:"Oyo-Hotels and Homes",
+        companyName:"OYO - Hotels and Homes",
         duration:"July 2019 - Present",
         role:"Software Development Engineer",
         highlights:[

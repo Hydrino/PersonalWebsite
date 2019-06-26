@@ -30,7 +30,7 @@
                         </v-list-tile-content>
                     </v-list-tile>
 
-                    <v-list-tile href="@/assets/resume.pdf" target="_blank">
+                    <v-list-tile href="@/assets/resume.pdf" target="_blank" style="color:var(--v-accent-base);">
                         <v-list-tile-content>
                             <v-list-tile-title >Resume</v-list-tile-title>
                         </v-list-tile-content>
