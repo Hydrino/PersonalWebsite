@@ -64,13 +64,15 @@ export default new Vuex.Store({
         ]
       }
     ],
+
     projectsData:[
       {
-        name:"Billy, the Maths Star!",
-        description:"Developed an Action on Google (Google Assistant Voice App) called Billy. Billy will ask s" + 
-        "imple maths questions for kids to test their knowledge.",
+        name:"Billy, the Math Star!",
+        description:"Developed an Action on Google (Google Assistant Voice App) named Billy. Billy will ask " + 
+        "simple math questions for kids to test their knowledge. A fun way for kids to learn while interacting  " + 
+        " with the Google Assistant.",
         technologies:[
-          "NodeJS", "Actions on Google", "Firebase functions", "Javascript"
+          "DialogFlow API", "Actions on Google", "Firebase Functions", "Javascript"
         ],
         githubLink:"https://github.com/Hydrino/Billy-the-Maths-star",
         externalLink:null,
@@ -78,9 +80,10 @@ export default new Vuex.Store({
       },
       {
         name:"Slide - Wallpaper SlideShow ",
-        description:"Wallpaper slideshow app that currently has 90 thousand downloads on the Google Play store.",
+        description:"Select your favorite images and Slide will set up a slideshow of your images as your phone's wallpaper."+ 
+                    " Currently the app has around 90,000 downloads on the Play Store.",
         technologies:[
-          "Android", "Java", "XML", "Gradle"
+          "Android", "Material Design", "Java",  "XML", "Gradle"
         ],
         githubLink:null,
         externalLink:"https://play.google.com/store/apps/details?id=ninhydrin.ninad.com.slide&hl=en_US",
@@ -88,9 +91,10 @@ export default new Vuex.Store({
       },
       {
         name:"Doodly",
-        description:"Fun app that recognizes doodles drawn by users using Deep Neural Networks.",
+        description:"Fun app that lets users draw a doodle and then predict what is drawn using Convolutional Neural Nets." + 
+                      " Used Tensorflow Lite API to transfer the model to an Android app. ",
         technologies:[
-          "Convolutional Neural Nets", "Keras", "Python", "Deep Learning"
+          "Convolutional Neural Nets", "Tensorflow", "Python", "Deep Learning", "Android"
         ],
         githubLink:"https://github.com/Hydrino/Doodly",
         externalLink:"https://www.dropbox.com/s/ubs60kel94f89xf/doodly.apk?dl=0",
@@ -98,7 +102,7 @@ export default new Vuex.Store({
       },
       {
         name:"Poll",
-        description:"Realtime polling app made for my college to get people's opinion on uploaded issues.",
+        description:"Realtime polling app made for my college to get students' anonymous votes on uploaded issues.",
         technologies:[
           "Android", "Firebase Realtime Database", "Kotlin", "RxJava2", "OkHttp3"
         ],
@@ -107,30 +111,30 @@ export default new Vuex.Store({
         featured:false
       },
       {
-        name:"MailBox",
-        description:"Android application that lets users send letters to each other.",
+        name:"AC-GAN Cifar10",
+        description:"A PyTorch implementation of Auxiliary Classifier GAN (acgan) to generate CIFAR10 dataset images. ",
         technologies:[
-          "Android", "SQL Database", "PHP", "Custom components", "Spring Animations"
-        ],
-        githubLink:"https://github.com/Hydrino/MailBox",
-        externalLink:"https://www.dropbox.com/s/0s5j8y64cqyg3rx/mailbox.apk?dl=0",
-        featured:false
-      },
-      {
-        name:"ACGAN Cifar10",
-        description:"A PyTorch implementation of Auxiliary Classifier GAN to generate CIFAR10 images. ",
-        technologies:[
-          "Pytorch", "GANs", "Python", "Deep Neural Nets", "Cifar10"
+          "Pytorch", "GANs", "Python", "Deep Neural Nets", "ACGAN"
         ],
         githubLink:"https://github.com/Hydrino/ACGAN_cifar10",
         externalLink:null,
         featured:false
       },
       {
-        name:"ACGAN MNIST",
-        description:"An Auxiliary Classifier GAN (ACGAN) in pytorch to generate MNIST digits. ",
+        name:"MailBox",
+        description:"Simple Android application that lets users sign up and send letters to each other.",
         technologies:[
-          "Pytorch", "GANs", "Python", "Deep Neural Nets", "MNIST"
+          "Android", "SQL Database", "PHP", "Custom components", "Spring Animations"
+        ],
+        githubLink:"https://github.com/Hydrino/MailBox",
+        externalLink:"https://www.dropbox.com/s/0s5j8y64cqyg3rx/mailbox.apk?dl=0",
+        featured:false
+      },      
+      {
+        name:"AC-GAN MNIST",
+        description:"An Auxiliary Classifier GAN (acgan) implementation in PyTorch to generate MNIST digits. ",
+        technologies:[
+          "Pytorch", "GANs", "Python", "Deep Neural Nets", "ACGAN"
         ],
         githubLink:"https://github.com/Hydrino/ACGAN_mnist",
         externalLink:null,
@@ -138,9 +142,9 @@ export default new Vuex.Store({
       },
       {
         name:"Personal Website",
-        description:"My personal website using GitHub pages. First time trying my hand at web development.",
+        description:"Developed and designed a landing page for myself using Vue and hosted on Github pages.",
         technologies:[
-          "Pytorch", "GANs", "Python", "Deep Neural Nets", "MNIST"
+          "Web development", "Vue", "Vuetify", "Javascript", "HTML", "CSS"
         ],
         githubLink:"https://github.com/Hydrino/PersonalWebsite",
         externalLink:null,
