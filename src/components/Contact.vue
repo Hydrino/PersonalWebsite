@@ -22,19 +22,20 @@ export default {
                                 'display-1': $vuetify.breakpoint.smAndDown,
                                 'display-2': $vuetify.breakpoint.mdAndUp,
                             }" style="opacity:0.9">
-                            Reach out!
+                            Get In Touch
                         </span>
 
                         <v-flex xs12 sm10 md10 lg10 xl8>
-                            <v-divider style="background:var(--v-accent-base)"/> <br/><br/>
+                            <v-divider style="background:var(--v-accent-base)"/> 
+                            <br/><br/>
                         </v-flex>
 
                     </v-flex>
                    
                     <v-flex xs10 sm8 md6 lg6 xl4 class="text-xs-center">
                         <span class="subheading" style="line-height:28px;" >
-                            Although I am not currently looking for freelance opportunities, 
-                            my inbox is always open. Whether for a potential project or just to say hi, I'll try my best to answer your email!
+                            Always appreciate when someone reaches out to me. Whether it a job opportunity
+                            or a potential project, or even just to say hi, drop in a mail! <br/> ^_^
                         </span>
                     </v-flex>
 

@@ -49,8 +49,7 @@ export default {
                                                 @{{workItem.companyName}}
                                             </span><br/>
 
-                                            <span class="caption font-weight-bold text-uppercase"
-                                                style="font-family: 'Monda' , sans-serif; opacity:0.7">
+                                            <span style=" opacity:0.7">
                                                 {{workItem.duration}}
                                             </span>
                                         </div>                                      
