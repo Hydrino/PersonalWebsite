@@ -152,6 +152,13 @@ export default new Vuex.Store({
         featured:false
       }   
     ],
+    
+    ContactData:{
+      title : "Get in touch",
+      message : "Always appreciate when someone reaches out to me. Whether it a job opportunity" + 
+                  " or a potential project, or even just to say hi, drop in a mail!"
+    },
+
     footerData:[
         {
           icon: 'fab fa-github',
@@ -168,7 +175,11 @@ export default new Vuex.Store({
         {
           icon: 'fab fa-instagram',
           link: 'https://www.instagram.com/_ninhydrin/'
-        }              
+        }     ,
+        {
+          icon: 'fab fa-facebook',
+          link: 'https://www.facebook.com/ninad.mohite.399'
+        }         
         
     ]
     
@@ -200,6 +211,9 @@ export default new Vuex.Store({
     },
     getAboutData(state){
       return state.AboutData;
+    },
+    getContactData(state){
+      return state.ContactData;
     },
     getFooterData(state){
       return state.footerData;

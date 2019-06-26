@@ -6,14 +6,15 @@ export default {
         }
     },
     props:{
-        footerData:Array
+        footerData:Array,
+        contactData: Object
     }
 }
 </script>
 
 <template>
     <v-app>
-        <v-content class="pa-0" >
+        <v-content class="pa-0">
             <v-container class="main_ " fluid fill-height >
                 <v-layout row wrap justify-center align-content-center>
 
@@ -22,7 +23,7 @@ export default {
                                 'display-1': $vuetify.breakpoint.smAndDown,
                                 'display-2': $vuetify.breakpoint.mdAndUp,
                             }" style="opacity:0.9">
-                            Get In Touch
+                            {{contactData.title}}
                         </span>
 
                         <v-flex xs12 sm10 md10 lg10 xl8>
@@ -34,8 +35,7 @@ export default {
                    
                     <v-flex xs10 sm8 md6 lg6 xl4 class="text-xs-center">
                         <span class="subheading" style="line-height:28px;" >
-                            Always appreciate when someone reaches out to me. Whether it a job opportunity
-                            or a potential project, or even just to say hi, drop in a mail! <br/> ^_^
+                            {{contactData.message}} <br/> ^_^
                         </span>
                     </v-flex>
 
@@ -70,7 +70,8 @@ export default {
 
                 <v-card-text class="text-xs-center">
 
-                    <v-btn   v-for="data in footerData" :key="data.link" class="mx-3 white--text " 
+                    <v-btn v-for="data in footerData" :key="data.link" class="white--text" 
+                        :class="$vuetify.breakpoint.xsOnly? 'mx-2' : 'mx-3'"
                         icon v-bind:href="data.link" target="_blank" >             
                         <v-hover>               
                             <v-icon medium slot-scope="{hover}" v-bind:color="`${hover? 'secondary' : 'white'}`" >
@@ -88,7 +89,7 @@ export default {
                     Designed and Built by Ninad Mohite.<br/>
 
                     <v-btn flat icon href="https://github.com/Hydrino/PersonalWebsite" target="_blank">
-                        <v-icon color="secondary">fa fa-code-branch</v-icon>
+                        <v-icon color="accent">fa fa-code-branch</v-icon>
                     </v-btn>
 
                 </v-card-text>

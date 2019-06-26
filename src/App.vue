@@ -46,7 +46,7 @@
             <About v-bind:id="sectionItems[0]" v-bind:aboutData="aboutData"/>
             <Work v-bind:id="sectionItems[1]" v-bind:workData="workData"/>
             <Projects v-bind:id="sectionItems[2]" v-bind:projectsData="projectsData"/>
-            <Contact v-bind:id="sectionItems[3]" v-bind:footerData="footerData"/>
+            <Contact v-bind:id="sectionItems[3]" v-bind:footerData="footerData" :contactData="contactData"/>
         </v-content>   
 
     </v-app>
@@ -94,6 +94,9 @@ export default {
         },
         footerData(){
             return this.$store.getters.getFooterData;
+        },
+        contactData(){
+            return this.$store.getters.getContactData;
         }
     }
 }
