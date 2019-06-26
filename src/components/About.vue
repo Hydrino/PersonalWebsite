@@ -27,17 +27,24 @@ export default {
     <v-app>
         <v-content class="pa-0">
             <v-container class="main_ " fluid fill-height>
+
                 <v-layout align-center justify-center row wrap>
 
                     <v-flex xl6 lg6 md6 sm8 xs12 style="padding-right:10%; margin-bottom:64px;" > 
 
-                        <span class="font-weight-bold white--text" :class="{
-                            'display-1': $vuetify.breakpoint.smAndDown,
-                            'display-2': $vuetify.breakpoint.mdAndUp,
-                        }" style="opacity:0.9">
-                            About Me
-                        </span>
-                        <v-divider style="background:var(--v-accent-base)"/>
+                        <v-layout row align-center>
+                            <div style="display:inline-block;">
+                                <span class="font-weight-bold white--text text-capitalize" :class="{
+                                    'display-1': $vuetify.breakpoint.smAndDown,
+                                    'display-2': $vuetify.breakpoint.mdAndUp,
+                                    }" style="opacity:0.9">
+                                    About Me
+                                </span>
+                            </div>     
+                            <v-flex>
+                                <v-divider style="background:var(--v-accent-base); margin-left:16px;"/>
+                            </v-flex>             
+                        </v-layout>
                         <br/><br/>
 
                         <div class="subheading" style="text-align:justify; line-height:26px;">

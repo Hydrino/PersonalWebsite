@@ -16,16 +16,24 @@ export default {
 
                     <v-flex xl6 lg8 md8 sm12 xs12 > 
 
-                        <span class="font-weight-bold white--text" :class="{
-                                'display-1': $vuetify.breakpoint.smAndDown,
-                                'display-2': $vuetify.breakpoint.mdAndUp,
-                            }" style="opacity:0.9" >
-                                Where I've worked
-                        </span>
+                        <v-layout row align-center>
 
-                        <v-flex xs12 sm10 md10 lg10 xl10>
-                            <v-divider style="background:var(--v-accent-base)"/>
-                        </v-flex>
+                            <div style="display:inline-block;">
+                                <span class="font-weight-bold white--text text-capitalize" :class="{
+                                        'display-1': $vuetify.breakpoint.smAndDown,
+                                        'display-2': $vuetify.breakpoint.mdAndUp,
+                                    }" style="opacity:0.9" >
+                                        Where I've worked
+                                </span>
+                            </div>
+
+                            <v-flex>
+                                <v-divider style="background:var(--v-accent-base); margin-left:16px;"/>
+                            </v-flex>   
+                        </v-layout>
+                        
+
+                        
                         <br/><br/>
 
                         <v-tabs color="primary" dark slider-color="secondary">

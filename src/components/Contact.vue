@@ -19,17 +19,24 @@ export default {
                 <v-layout row wrap justify-center align-content-center>
 
                     <v-flex offset-md2 xs12 >
-                        <span class="font-weight-bold white--text" :class="{
-                                'display-1': $vuetify.breakpoint.smAndDown,
-                                'display-2': $vuetify.breakpoint.mdAndUp,
-                            }" style="opacity:0.9">
-                            {{contactData.title}}
-                        </span>
 
-                        <v-flex xs12 sm10 md10 lg10 xl8>
-                            <v-divider style="background:var(--v-accent-base)"/> 
-                            <br/><br/>
-                        </v-flex>
+                        <v-layout row align-center>
+                            <div style="display:inline-block;">
+                                <span class="font-weight-bold white--text text-capitalize" :class="{
+                                    'display-1': $vuetify.breakpoint.smAndDown,
+                                    'display-2': $vuetify.breakpoint.mdAndUp,
+                                    }" style="opacity:0.9">
+                                    {{contactData.title}}
+                                </span>
+                            </div> 
+
+                            <v-flex md8>
+                                <v-divider style="background:var(--v-accent-base); margin-left:16px;"/>                            
+                            </v-flex>
+
+                        </v-layout>                       
+
+                        <br/><br/><br/>
 
                     </v-flex>
                    

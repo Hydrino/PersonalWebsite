@@ -26,21 +26,24 @@ export default {
             <v-container class="main_" fluid >
                 <v-layout row wrap >
 
-                    <v-flex offset-md2 offset-lg2 offset-xl2 xs12 >
-                        <span class="font-weight-bold white--text" :class="{
-                            'display-1': $vuetify.breakpoint.smAndDown,
-                            'display-2': $vuetify.breakpoint.mdAndUp,
-                        }" style="opacity:0.9">
-                            Stuff I have built
-                        </span>                      
-
+                    <v-flex offset-md2 offset-lg2 offset-xl2 xs12 md8>
+                        <v-layout row align-center>
+                            <div style="display:inline:block;">
+                                <span class="font-weight-bold white--text text-capitalize" :class="{
+                                    'display-1': $vuetify.breakpoint.smAndDown,
+                                    'display-2': $vuetify.breakpoint.mdAndUp,
+                                    }" style="opacity:0.9">
+                                    Stuff I have built
+                                </span>                      
+                            </div>
+                            <v-flex>
+                                <v-divider style="background:var(--v-accent-base); margin-left: 16px;"/>
+                            </v-flex>
+                        </v-layout>      
+                        <br/><br/>                      
                     </v-flex>
 
-                    <v-flex xs10 sm10 md8 lg8 xl6 offset-md2 offset-lg2 offset-xl2>
-                        <v-divider style="background:var(--v-accent-base)"/>
-                        <br/><br/>
-                    </v-flex>
-                            
+                    
                     <v-flex xs12> 
                         <FeaturedProjects v-bind:featuredProjects="featuredProjects"/>
                     </v-flex>
