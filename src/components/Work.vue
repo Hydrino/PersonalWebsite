@@ -41,17 +41,27 @@ export default {
                                     <v-card-title>
                                         <div>
                                             <br/>
-                                            <span class="headline">{{workItem.role}}</span>
-                                            <span class="headline " style="color:var(--v-secondary-base);">
+                                            <span :class="$vuetify.breakpoint.lgAndUp? 'display-1' : 'headline'">
+                                                {{workItem.role}}
+                                            </span>
+                                            <span :class="$vuetify.breakpoint.lgAndUp? 'display-1' : 'headline'" 
+                                                style="color:var(--v-secondary-base);">
                                                 @{{workItem.companyName}}
                                             </span><br/>
-                                            <span class="sub-heading font-weight-light">{{workItem.duration}}</span>
+
+                                            <span class="caption font-weight-bold text-uppercase"
+                                                style="font-family: 'Monda' , sans-serif; opacity:0.7">
+                                                {{workItem.duration}}
+                                            </span>
                                         </div>                                      
                                     </v-card-title>
 
                                     <v-card-text>
                                         <ul style="line-height:32px;" class="subheading">
-                                            <li v-for=" highlight in workItem.highlights" v-bind:key="highlight" class="main_">{{highlight}}</li>
+                                            <li v-for=" highlight in workItem.highlights" v-bind:key="highlight" 
+                                                class="main_ " >
+                                                {{highlight}}
+                                            </li>
                                         </ul>                           
                                     </v-card-text>
 

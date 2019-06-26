@@ -39,9 +39,9 @@ export default new Vuex.Store({
         duration:"July 2019 - Present",
         role:"Software Development Engineer",
         highlights:[
-          "Creating robust and reliable software meeting strict client requirements.",
-          "Helped drive user engagement with our platform.",
-          "Work with variety of software technologies like NodeJS, Vue and more. "
+          "Creating robust and reliable software meeting strict requirements for a diverse array of projects.",
+          "Working with a variety of different frameworks, languages and platforms.",
+          "Effectively communicating across various departments and multi-disciplinary teams."
         ]
       },
       {
@@ -49,18 +49,19 @@ export default new Vuex.Store({
         duration:"May 2018 - July 2018",
         role:"Android Developer Intern",
         highlights:[
-          "Tasked with developing an app for teachers, actively participated in brainstorming it’s features and gave valuable insights.",
-          "Single-handedly designed, prototyped and developed the app from scratch.",
-          "Work with variety of software technologies like NodeJS, Vue and more. "
+          "Tasked with developing an app for teachers, actively participated right from the ideation phase.",
+          "Designed the app on Sketch and Zeplin with Material Design. ",
+          "Single-handedly designed, prototyped and developed the app from scratch."
         ]
       },
       {
         companyName:"MyCaptain, The Climber",
         duration:"June 2018 - Present",
-        role:"Android Development Mentor",
+        role:"Android Workshop Mentor",
         highlights:[
-          "I’m an Android Development Captain on the MyCaptain platform, where I teach and mentor people passionate about creating apps.",
-          "I have mentored over 160 students in 4 months since joining.",
+          "Mentor students new to Android development on the MyCaptain platform. ",
+          "Assign mentees tasks and solve their doubts, while refining their debugging skills.",
+          "Mentored 160 students over 4 months uptil now."
         ]
       }
     ],

@@ -63,7 +63,7 @@ export default {
                                 </ul>
                             </div>
                             <div style="float: right; width: 50%; text-align:left;line-height:30px;" >
-                                <ul>
+                                <ul style="">
                                     <li v-for="i in range(length/2, length)" v-bind:key="i">{{aboutData.techStack[i]}}</li>
                                 </ul>
                             </div>
@@ -71,9 +71,10 @@ export default {
 
                     </v-flex>
 
-                    <v-flex xl2 lg2 md2 sm4 xs6 >
+                    <v-flex xl2 lg2 md2 sm4 xs6 
+                        :style="{'margin-bottom' : $vuetify.breakpoint.xsOnly? '64px': '0px'}">
                         <v-card hover flat tile style="cursor:default;">
-                            <v-img v-bind:src="require('@/assets/dp.jpg')" class="image_style" min-height="312px" min-width="212px" ></v-img>
+                            <v-img v-bind:src="require('@/assets/dp.jpg')" class="image_style"  min-width="176px" ></v-img>
                         </v-card>
                     </v-flex>
 
