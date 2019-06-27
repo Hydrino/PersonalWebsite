@@ -77,7 +77,17 @@ export default {
 
                 <v-card-text class="text-xs-center">
 
-                    <v-btn v-for="data in footerData" :key="data.link" class="white--text" 
+                    <a v-for="data in footerData" :key="data.link" 
+                        :class="$vuetify.breakpoint.xsOnly? 'mx-3' : 'mx-4'"
+                        v-bind:href="data.link" target="_blank">
+                        <v-hover>               
+                            <v-icon medium slot-scope="{hover}" :color="`${hover? 'secondary' : 'white'}`" >
+                                {{ data.icon }}
+                            </v-icon>
+                        </v-hover>
+                    </a>
+
+                    <!-- <v-btn v-for="data in footerData" :key="data.link" class="white--text" 
                         :class="$vuetify.breakpoint.xsOnly? 'mx-2' : 'mx-3'"
                         icon v-bind:href="data.link" target="_blank" >             
                         <v-hover>               
@@ -86,7 +96,7 @@ export default {
                             </v-icon>
                         </v-hover>
                         
-                    </v-btn>                   
+                    </v-btn>                    -->
                     
                 </v-card-text>
 
