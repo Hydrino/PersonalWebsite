@@ -23,6 +23,21 @@ export default {
                 'opacity': 0.8, 
 
            }
+       },
+       getGradient(idx){
+           return  'to bottom left, #37474F55, #37474F55' 
+       },
+        getSoberGradient(idx){
+           return 'to bottom left, #37474F11, #37474F11' ;
+       }
+   },
+   data(){
+       return {
+           image_path : [
+               require("@/assets/project_screenshots/sc_billy.png"),
+               require("@/assets/project_screenshots/sc_slide.png"),
+               require("@/assets/project_screenshots/sc_doodly.png"),
+           ]
        }
    }
 }
@@ -39,16 +54,14 @@ export default {
                    <v-flex v-for="(project,idx) in featuredProjects" 
                         v-bind:key="project.name" xs12 sm10 md8 lg8 xl8 align-content-center >
                        
-                       <v-card color="transparent" flat >
+                       <v-card flat color="primary" dark style="margin-bottom:32px;"> 
 
-                           <v-parallax v-if=$vuetify.breakpoint.xsOnly 
-                                :src="require('@/assets/demoSC.png')" 
-                                style="margin:16px;">
+                           <v-img v-if=$vuetify.breakpoint.xsOnly 
+                                :src="image_path[idx]" >                               
 
-                                <v-layout align-center> 
-
-                                   <div style="background:transparent;" 
-                                   :style="{'text-align' : idx%2===0? 'end' : 'start'}">
+                                <v-layout align-center style="background:#37474Fd0;padding:8px;"> 
+                                    <div style="background:transparent;" 
+                                    :style="{'text-align' : idx%2===0? 'end' : 'start'}">   
 
                                         <span class="accent--text font-weight-bold text-uppercase caption"
                                                 style="font-family: 'Monda', sans-serif;">
@@ -75,7 +88,7 @@ export default {
                                 </v-layout>
 
                                 <div :style="{'text-align' : idx%2===0? 'end' : 'start'}" 
-                                    style="padding-bottom:16px;">
+                                    style="padding-bottom:16px;background:#37474Fd0">
 
                                     <v-btn v-if="project.githubLink!==null" icon 
                                     :href="project.githubLink" target="_blank"
@@ -88,16 +101,18 @@ export default {
                                     small>
                                         <v-icon color="accent">open_in_new</v-icon>
                                     </v-btn>
-                                </div>
+                                </div>                               
 
-                           </v-parallax>
+                           </v-img>
 
                            <v-layout v-else align-center style="margin-bottom: 124px; padding:20px">    
 
                                 <v-flex style="width:60%;" :class="{'order-sm2' : idx%2===1}">
-                                    <v-card flat>
-                                        <v-img v-bind:src="require('@/assets/demoSC.png')" ></v-img>
-                                    </v-card>
+                                    <v-hover>
+                                        <v-card flat hover style="cursor:default;" slot-scope="{ hover }">
+                                            <v-img :gradient="hover? getSoberGradient(idx) : getGradient(idx)" v-bind:src="image_path[idx]"></v-img>
+                                        </v-card>
+                                    </v-hover>
                                 </v-flex>                                   
 
                                 <v-flex :style="styleObject(idx)" >

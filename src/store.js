@@ -75,6 +75,7 @@ export default new Vuex.Store({
         technologies:[
           "DialogFlow API", "Actions on Google", "Firebase Functions", "Javascript"
         ],
+        screenshot:'sc_slide.png',
         githubLink:"https://github.com/Hydrino/Billy-the-Maths-star",
         externalLink:null,
         featured:true
@@ -86,6 +87,7 @@ export default new Vuex.Store({
         technologies:[
           "Android", "Material Design", "Java",  "XML", "Gradle"
         ],
+        screenshot:'sc_slide.png',
         githubLink:null,
         externalLink:"https://play.google.com/store/apps/details?id=ninhydrin.ninad.com.slide&hl=en_US",
         featured:true
@@ -97,6 +99,7 @@ export default new Vuex.Store({
         technologies:[
           "Convolutional Neural Nets", "Tensorflow", "Python", "Deep Learning", "Android"
         ],
+        screenshot:'sc_slide.png',
         githubLink:"https://github.com/Hydrino/Doodly",
         externalLink:"https://www.dropbox.com/s/ubs60kel94f89xf/doodly.apk?dl=0",
         featured:true
