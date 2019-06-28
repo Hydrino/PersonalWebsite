@@ -24,10 +24,10 @@ export default {
 
            }
        },
-       getGradient(idx){
+       getGradient(){
            return  'to bottom left, #37474F55, #37474F55' 
        },
-        getSoberGradient(idx){
+        getSoberGradient(){
            return 'to bottom left, #37474F11, #37474F11' ;
        }
    },
@@ -110,7 +110,7 @@ export default {
                                 <v-flex style="width:60%;" :class="{'order-sm2' : idx%2===1}">
                                     <v-hover>
                                         <v-card flat hover style="cursor:default;" slot-scope="{ hover }">
-                                            <v-img :gradient="hover? getSoberGradient(idx) : getGradient(idx)" v-bind:src="image_path[idx]"></v-img>
+                                            <v-img :gradient="hover? getSoberGradient() : getGradient()" v-bind:src="image_path[idx]"></v-img>
                                         </v-card>
                                     </v-hover>
                                 </v-flex>                                   

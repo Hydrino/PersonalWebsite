@@ -3,10 +3,14 @@
     <!-- Gotta wrap inside v-app in order for Vuetify to work! -->
     <v-app >   
    
-        <v-toolbar color="primary" dark app height="72em">
+        <v-toolbar color="primary" dark app height="72em" scroll-off-screen scroll-threshold="80">
 
             <v-toolbar-title style="color:white;">
-                <span @click="$vuetify.goTo('#Intro')" style="cursor:pointer;opacity:0.6;" class="display-1 font-weight-bold">{{name}}</span>              
+                <span @click="$vuetify.goTo('#Intro')" 
+                    style="cursor:pointer;opacity:0.6;" 
+                    class="display-1 font-weight-bold">
+                {{name}}
+                </span>              
             </v-toolbar-title>
 
             <v-spacer></v-spacer>
