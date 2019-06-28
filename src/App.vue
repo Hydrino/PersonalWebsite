@@ -19,7 +19,8 @@
             <!-- so will only show for larger screens -->
             <v-toolbar-items class="hidden-sm-and-down">  
                 <v-btn flat v-for="i in sectionItems.length" v-bind:key="sectionItems[i-1]" @click="$vuetify.goTo('#' + sectionItems[i-1])">{{sectionItems[i-1]}}</v-btn>
-                <v-btn outline color="accent" href="https://brittanychiang.com/resume.pdf" target="_blank">Resume</v-btn>
+                <v-btn outline color="accent" href="https://Hydrino.github.io/resume.pdf" 
+                target="_blank" type="application/pdf">Resume</v-btn>
             </v-toolbar-items>
 
             <!-- for smaller screens we will use menu -->
@@ -34,7 +35,8 @@
                         </v-list-tile-content>
                     </v-list-tile>
 
-                    <v-list-tile href="@/assets/resume.pdf" target="_blank" style="color:var(--v-accent-base);">
+                    <v-list-tile href="https://Hydrino.github.io/resume.pdf" target="_blank" 
+                    type="application/pdf" style="color:var(--v-accent-base);">
                         <v-list-tile-content>
                             <v-list-tile-title >Resume</v-list-tile-title>
                         </v-list-tile-content>
@@ -112,7 +114,6 @@ export default {
 .main_{
     background: var(--v-primary-base);
     color: #b0bec5;
-    padding: 0pt;
 }
 
 ul {

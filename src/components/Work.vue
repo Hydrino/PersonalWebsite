@@ -84,7 +84,3 @@ export default {
     </v-app>
 </template>
 
-<style>
-
-</style>
-

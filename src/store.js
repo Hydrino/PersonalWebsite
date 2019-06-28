@@ -151,7 +151,7 @@ export default new Vuex.Store({
           "Web development", "Vue", "Vuetify", "Javascript", "HTML", "CSS"
         ],
         githubLink:"https://github.com/Hydrino/PersonalWebsite",
-        externalLink:null,
+        externalLink:"https://hydrino.github.io/#/",
         featured:false
       }   
     ],
