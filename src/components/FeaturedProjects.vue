@@ -34,9 +34,9 @@ export default {
    data(){
        return {
            image_path : [
-               require("@/assets/project_screenshots/sc_billy.png"),
-               require("@/assets/project_screenshots/sc_slide.png"),
-               require("@/assets/project_screenshots/sc_doodly.png"),
+               require("@/assets/project_screenshots/sc_billy1.png"),
+               require("@/assets/project_screenshots/sc_slide1.png"),
+               require("@/assets/project_screenshots/sc_doodly1.png"),
            ]
        }
    }

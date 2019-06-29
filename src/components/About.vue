@@ -1,4 +1,5 @@
 <script>
+
 export default {
     props:{
         aboutData:Object
@@ -21,7 +22,6 @@ export default {
     }
 }
 </script>
-
 
 <template>
     <v-app>
@@ -80,8 +80,15 @@ export default {
 
                     <v-flex xl2 lg2 md2 sm4 xs6 
                         :style="{'margin-bottom' : $vuetify.breakpoint.xsOnly? '64px': '0px'}">
-                        <v-card hover flat tile style="cursor:default;">
+                        <v-card hover flat tile style="cursor:default;" color="transparent">
                             <v-img v-bind:src="require('@/assets/dp.jpg')" class="image_style"  min-width="176px" ></v-img>
+                            <!-- <div>
+                            <picture>
+                                <source :srcset="require('@/assets/dp.webp')" type="image/webp" >
+                                <source :srcset="require('@/assets/dp.jpg')" type="image/jpeg"> 
+                                <img v-bind:src="require('@/assets/dp.jpg')">
+                            </picture>
+                            </div> -->
                         </v-card>
                     </v-flex>
 
