@@ -7,10 +7,9 @@ import Clipboard from 'v-clipboard'
  
 Vue.use(Clipboard)
 
-
 Vue.use(Vuetify, {
   theme:{
-    primary: '#37474F ',
+    primary: '#37474F',
     secondary: '#66bb6a',
     accent: '#64ffda'
   },

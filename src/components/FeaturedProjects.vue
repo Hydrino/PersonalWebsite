@@ -25,10 +25,10 @@ export default {
            }
        },
        getGradient(){
-           return  'to bottom left, #37474F55, #37474F55' 
+           return  'to bottom left, rgba(53,71,79,0.33), rgba(53,71,79,0.33)'  
        },
         getSoberGradient(){
-           return 'to bottom left, #37474F11, #37474F11' ;
+           return 'to bottom left, rgba(53,71,79,0.06), rgba(53,71,79,0.06)' ;
        }
    },
    data(){
@@ -59,7 +59,7 @@ export default {
                            <v-img v-if=$vuetify.breakpoint.xsOnly 
                                 :src="image_path[idx]" >                               
 
-                                <v-layout align-center style="background:#37474Fd0;padding:8px;"> 
+                                <v-layout align-center style="background:rgba(53,71,79,0.81); padding:8px;"> 
                                     <div style="background:transparent;" 
                                     :style="{'text-align' : idx%2===0? 'end' : 'start'}">   
 
@@ -88,7 +88,7 @@ export default {
                                 </v-layout>
 
                                 <div :style="{'text-align' : idx%2===0? 'end' : 'start'}" 
-                                    style="padding-bottom:16px;background:#37474Fd0">
+                                    style="padding-bottom:16px; background:rgba(53,71,79,0.81)">
 
                                     <v-btn v-if="project.githubLink!==null" icon 
                                     :href="project.githubLink" target="_blank"

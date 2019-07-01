@@ -61,7 +61,7 @@ export default {
                             <span>Click to copy</span>
                         </v-tooltip>
 
-                        <v-snackbar v-model="snackbar" left timeout="1000" color="secondary">
+                        <v-snackbar v-model="snackbar" left :timeout="1000" color="secondary">
                             Copied to clipboard.
                         </v-snackbar>
                         
