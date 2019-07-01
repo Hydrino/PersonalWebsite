@@ -6,12 +6,14 @@ export default {
    methods:{
        styleObject: function (idx) {
            return {
-                'text-align' : idx%2===1? 'start' : 'end' ,
                 'margin-left' : idx%2===1? '0px' : '-64px',
                 'margin-right' : idx%2===1? '-64px' : '0px',
                 'width' : '40%',
                 'z-index' : 1,
                 'background' : 'transparent',
+                'text-align' : idx%2===1? 'left' : 'right',
+                // use left and right instead of start and end
+                // coz it doesnt work on Edge
            }
        },
        listStyleObj(idx){
@@ -61,7 +63,7 @@ export default {
 
                                 <v-layout align-center style="background:rgba(53,71,79,0.81); padding:8px;"> 
                                     <div style="background:transparent;" 
-                                    :style="{'text-align' : idx%2===0? 'end' : 'start'}">   
+                                    :style="{'text-align' : idx%2===0? 'right' : 'left'}">   
 
                                         <span class="accent--text font-weight-bold text-uppercase caption"
                                                 style="font-family: 'Monda', sans-serif;">
@@ -87,7 +89,7 @@ export default {
                                     </div>                               
                                 </v-layout>
 
-                                <div :style="{'text-align' : idx%2===0? 'end' : 'start'}" 
+                                <div :style="{'text-align' : idx%2===0? 'right' : 'left'}" 
                                     style="padding-bottom:16px; background:rgba(53,71,79,0.81)">
 
                                     <v-btn v-if="project.githubLink!==null" icon 
@@ -105,7 +107,7 @@ export default {
 
                            </v-img>
 
-                           <v-layout v-else align-center style="margin-bottom: 124px; padding:20px">    
+                           <v-layout v-else align-center style="margin-bottom: 124px; padding:20px" >    
 
                                 <v-flex style="width:60%;" :class="{'order-sm2' : idx%2===1}">
                                     <v-hover>
@@ -113,10 +115,11 @@ export default {
                                             <v-img :gradient="hover? getSoberGradient() : getGradient()" v-bind:src="image_path[idx]"></v-img>
                                         </v-card>
                                     </v-hover>
-                                </v-flex>                                   
+                                </v-flex>                              
 
                                 <v-flex :style="styleObject(idx)" >
 
+                                    
                                     <span class="accent--text text-uppercase caption font-weight-bold" 
                                         style="font-family: 'Monda', sans-serif;">Featured Project</span>
                                     <br/>
