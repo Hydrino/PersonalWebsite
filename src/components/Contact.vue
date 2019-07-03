@@ -54,8 +54,8 @@ export default {
                                 <span v-on="on" :class="{'title': $vuetify.breakpoint.xs,'display-1': $vuetify.breakpoint.sm,
                                                             'display-2': $vuetify.breakpoint.md, 'display-3': $vuetify.breakpoint.lg, 
                                                             'display-4': $vuetify.breakpoint.xl}" 
-                                        v-clipboard="'mohiteninad15@gmail.com'" v-on:click="snackbar=true">
-                                    <b>mohiteninad15@gmail.com</b>
+                                        v-clipboard="contactData.email" v-on:click="snackbar=true">
+                                    <b>{{contactData.email}}</b>
                                 </span>
                             </template>
                             <span>Click to copy</span>
@@ -86,17 +86,6 @@ export default {
                             </v-icon>
                         </v-hover>
                     </a>
-
-                    <!-- <v-btn v-for="data in footerData" :key="data.link" class="white--text" 
-                        :class="$vuetify.breakpoint.xsOnly? 'mx-2' : 'mx-3'"
-                        icon v-bind:href="data.link" target="_blank" >             
-                        <v-hover>               
-                            <v-icon medium slot-scope="{hover}" v-bind:color="`${hover? 'secondary' : 'white'}`" >
-                                {{ data.icon }}
-                            </v-icon>
-                        </v-hover>
-                        
-                    </v-btn>                    -->
                     
                 </v-card-text>
 

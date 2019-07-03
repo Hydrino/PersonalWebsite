@@ -159,7 +159,8 @@ export default new Vuex.Store({
     ContactData:{
       title : "Get in touch",
       message : "Always appreciate when someone reaches out to me. Whether it a job opportunity" + 
-                  " or a potential project, or even just to say hi, drop in a mail!"
+                  " or a potential project, or even just to say hi, drop in a mail!",
+      email : "ninad.moh@gmail.com"
     },
 
     footerData:[
