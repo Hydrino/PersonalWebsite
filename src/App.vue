@@ -20,12 +20,12 @@
             <v-toolbar-items class="hidden-sm-and-down">  
                 <v-btn flat v-for="i in sectionItems.length" v-bind:key="sectionItems[i-1]" @click="$vuetify.goTo('#' + sectionItems[i-1])">{{sectionItems[i-1]}}</v-btn>
                 <v-btn outline color="accent" href="https://Hydrino.github.io/resume.pdf" 
-                target="_blank" type="application/pdf">Resume</v-btn>
+                target="_blank" type="application/pdf" >Resume</v-btn>
             </v-toolbar-items>
 
             <!-- for smaller screens we will use menu -->
             <v-menu class="hidden-md-and-up" dark min-width="40%" >
-                <v-toolbar-side-icon slot="activator">
+                <v-toolbar-side-icon slot="activator" aria-label="menu">
                     <!-- <v-icon>arrow_downward</v-icon> -->
                 </v-toolbar-side-icon>
                 <v-list style="background:var(--v-secondary-base);">

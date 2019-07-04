@@ -166,23 +166,28 @@ export default new Vuex.Store({
     footerData:[
         {
           icon: 'fab fa-github',
-          link: 'https://github.com/Hydrino'
+          link: 'https://github.com/Hydrino',
+          title: "Github"
         },
         {
           icon: 'fab fa-twitter',
-          link: 'https://twitter.com/NinHydrino'
+          link: 'https://twitter.com/NinHydrino',
+          title: "Twitter"
         },
         {
           icon: 'fab fa-linkedin',
-          link: 'https://www.linkedin.com/in/ninadmohite/'
+          link: 'https://www.linkedin.com/in/ninadmohite/',
+          title: "LinkedIn"
         },
         {
           icon: 'fab fa-instagram',
-          link: 'https://www.instagram.com/_ninhydrin/'
+          link: 'https://www.instagram.com/_ninhydrin/',
+          title: "Instagram"
         }     ,
         {
           icon: 'fab fa-facebook',
-          link: 'https://www.facebook.com/ninad.mohite.399'
+          link: 'https://www.facebook.com/ninad.mohite.399',
+          title: "Facebook"
         }         
         
     ]

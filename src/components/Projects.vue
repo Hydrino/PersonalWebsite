@@ -63,18 +63,20 @@ export default {
 
                             <v-flex v-for="project in otherProjects" :key="project.name" xs12 sm6 md6 lg4 xl4>
                                 <v-card style="margin:8px;cursor:default;" dark 
-                                    color="#455A64" hover flat>
+                                    color = rgb(69,90,100) hover flat>
 
                                     <v-container fluid fill-height>
                                         <v-layout row wrap>                                            
 
                                             <v-flex xs12 class="text-xs-right">                                              
 
-                                                <v-btn v-if="project.githubLink!==null" icon :href="project.githubLink" target="_blank">
+                                                <v-btn v-if="project.githubLink!==null" icon :href="project.githubLink" 
+                                                    target="_blank" title="Github">
                                                     <v-icon medium color="accent">fab fa-github</v-icon>
                                                 </v-btn>
 
-                                                <v-btn v-if="project.externalLink!==null" icon :href="project.externalLink" target="_blank">
+                                                <v-btn v-if="project.externalLink!==null" icon :href="project.externalLink" 
+                                                    target="_blank" title="External link">
                                                     <v-icon medium color="accent">open_in_new</v-icon>
                                                 </v-btn>
                                                                                                
@@ -82,7 +84,7 @@ export default {
 
                                             <v-flex xs12 class="text-xs-left">                                              
 
-                                                <v-btn icon disabled>
+                                                <v-btn icon disabled aria-label="folder icon">
                                                     <v-icon large color="accent">far fa-folder-open</v-icon>
                                                 </v-btn>
                                                 <br/>   <br/>                                    

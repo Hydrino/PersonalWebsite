@@ -80,15 +80,17 @@ export default {
 
                     <v-flex xl2 lg2 md2 sm4 xs6 
                         :style="{'margin-bottom' : $vuetify.breakpoint.xsOnly? '64px': '0px'}">
+                        
                         <v-card hover flat tile style="cursor:default;" color="transparent">
-                            <v-img v-bind:src="require('@/assets/dp.jpg')" class="image_style"  min-width="176px" ></v-img>
-                            <!-- <div>
-                            <picture>
-                                <source :srcset="require('@/assets/dp.webp')" type="image/webp" >
-                                <source :srcset="require('@/assets/dp.jpg')" type="image/jpeg"> 
-                                <img v-bind:src="require('@/assets/dp.jpg')">
-                            </picture>
-                            </div> -->
+                            <v-img v-bind:src="require('@/assets/dp.jpg')" class="image_style"
+                                alt="Display picture" min-width="176px" ></v-img>
+                            
+                            <!-- <picture>
+                                <source :srcset="require('@/assets/dp.webp')" type="image/webp">
+                                <source srcset="@/assets/dp.jpg"  type="image/jpeg"> 
+                                <v-img v-bind:src="require('@/assets/dp.jpg')" class="image_style3"  min-width="176px" ></v-img>
+                            </picture> -->
+
                         </v-card>
                     </v-flex>
 
@@ -100,10 +102,20 @@ export default {
 
 <style scoped>
 
-.image_style{
-    border-style: solid;
-    border-width: 1px;
-    border-color:var(--v-secondary-base);
-}
+    .image_style{
+        border-style: solid;
+        border-width: 1px;
+        border-color:var(--v-secondary-base);
+    }
+    /* .image_style2{
+        border-style: solid;
+        border-width: 1px;
+        border-color:var(--v-secondary-base);
+    }
+    .image_style3{
+        border-style: solid;
+        border-width: 1px;
+        border-color:var(--v-accent-base);
+    } */
 </style>
 

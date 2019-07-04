@@ -36,9 +36,9 @@ export default {
    data(){
        return {
            image_path : [
-               require("@/assets/project_screenshots/sc_billy1.png"),
-               require("@/assets/project_screenshots/sc_slide1.png"),
-               require("@/assets/project_screenshots/sc_doodly1.png"),
+               require("@/assets/project_screenshots/sc_billy.png"),
+               require("@/assets/project_screenshots/sc_slide.png"),
+               require("@/assets/project_screenshots/sc_doodly.png"),
            ]
        }
    }
@@ -94,13 +94,13 @@ export default {
 
                                     <v-btn v-if="project.githubLink!==null" icon 
                                     :href="project.githubLink" target="_blank"
-                                    small>
+                                    small title="Github">
                                         <v-icon color="accent">fab fa-github</v-icon>
                                     </v-btn>
 
                                     <v-btn v-if="project.externalLink!==null" icon 
                                     :href="project.externalLink" target="_blank"
-                                    small>
+                                    small title="External link">
                                         <v-icon color="accent">open_in_new</v-icon>
                                     </v-btn>
                                 </div>                               
@@ -143,11 +143,13 @@ export default {
                                     </ul>
                                     <br/>
 
-                                    <v-btn v-if="project.githubLink!==null" icon :href="project.githubLink" target="_blank">
+                                    <v-btn v-if="project.githubLink!==null" icon :href="project.githubLink" 
+                                        target="_blank" title="Github">
                                         <v-icon color="accent">fab fa-github</v-icon>
                                     </v-btn>
 
-                                    <v-btn v-if="project.externalLink!==null" icon :href="project.externalLink" target="_blank">
+                                    <v-btn v-if="project.externalLink!==null" icon :href="project.externalLink" 
+                                        target="_blank" title="External link">
                                         <v-icon color="accent">open_in_new</v-icon>
                                     </v-btn>
                                     
