@@ -14,7 +14,7 @@ export default {
             return this.aboutData.techStack.length;
         },
         currentJobHtml(){
-            return '<span style="color:var(--v-accent-base)">Oyo Hotels and Home</span>'
+            return '<span style="color:var(--v-accent-base)">OYO Hotels and Home</span>'
         },
         college(){
             return '<span style="color:var(--v-accent-base)">National Institute of Technology, Delhi (NIT Delhi)</span>'
