@@ -71,12 +71,12 @@ export default {
                                             <v-flex xs12 class="text-xs-right">                                              
 
                                                 <v-btn v-if="project.githubLink!==null" icon :href="project.githubLink" 
-                                                    target="_blank" title="Github">
+                                                    target="_blank" title="Github" rel="noopener">
                                                     <v-icon medium color="accent">fab fa-github</v-icon>
                                                 </v-btn>
 
                                                 <v-btn v-if="project.externalLink!==null" icon :href="project.externalLink" 
-                                                    target="_blank" title="External link">
+                                                    target="_blank" title="External link" rel="noopener">
                                                     <v-icon medium color="accent">open_in_new</v-icon>
                                                 </v-btn>
                                                                                                

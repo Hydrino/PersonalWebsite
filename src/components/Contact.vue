@@ -79,7 +79,7 @@ export default {
 
                     <a v-for="data in footerData" :key="data.link" 
                         :class="$vuetify.breakpoint.xsOnly? 'mx-3' : 'mx-4'"
-                        v-bind:href="data.link" target="_blank"  :title="data.title">
+                        v-bind:href="data.link" target="_blank" rel="noopener" :title="data.title">
                         <v-hover>               
                             <v-icon medium slot-scope="{hover}" :color="`${hover? 'secondary' : 'white'}`" 
                                 >
@@ -95,7 +95,7 @@ export default {
                 <v-card-text class="text-xs-center">
                     <span>Designed and Built by Ninad Mohite.</span><br/>
 
-                    <v-btn flat icon href="https://github.com/Hydrino/PersonalWebsite" target="_blank"
+                    <v-btn flat icon href="https://github.com/Hydrino/PersonalWebsite" target="_blank" rel="noopener"
                         title="Webite source code">
                         <v-icon color="accent">fa fa-code-branch</v-icon>
                     </v-btn>
