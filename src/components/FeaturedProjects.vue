@@ -101,7 +101,7 @@ export default {
                                     <v-btn v-if="project.externalLink!==null" icon 
                                     :href="project.externalLink" target="_blank" rel="noopener"
                                     small title="External link">
-                                        <v-icon color="accent">open_in_new</v-icon>
+                                        <img :src="require('@/assets/open_in_new.svg')" />
                                     </v-btn>
                                 </div>                               
 
@@ -150,7 +150,7 @@ export default {
 
                                     <v-btn v-if="project.externalLink!==null" icon :href="project.externalLink" 
                                         target="_blank" title="External link" rel="noopener">
-                                        <v-icon color="accent">open_in_new</v-icon>
+                                        <img :src="require('@/assets/open_in_new.svg')" />
                                     </v-btn>
                                     
                                 </v-flex>                                    

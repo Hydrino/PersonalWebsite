@@ -113,7 +113,7 @@ export default {
 /* main style/theme of the webpage */
 .main_{
     background: var(--v-primary-base);
-    color: #b0bec5;
+    color: rgb(176, 190, 197);
 }
 
 ul {

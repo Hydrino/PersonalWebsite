@@ -77,7 +77,7 @@ export default {
 
                                                 <v-btn v-if="project.externalLink!==null" icon :href="project.externalLink" 
                                                     target="_blank" title="External link" rel="noopener">
-                                                    <v-icon medium color="accent">open_in_new</v-icon>
+                                                     <img :src="require('@/assets/open_in_new.svg')" width="30px"/>
                                                 </v-btn>
                                                                                                
                                             </v-flex>
