@@ -56,7 +56,7 @@ export default {
                             </span><br/><br/>
 
                             <span>
-                                    Shortly after graduating, I started working as a Software Developer in <span v-html="currentJobHtml"></span>, 
+                                    Shortly after graduating, I started working as a Software Developer in <span v-html="currentJobHtml"></span> Bangalore, 
                                     where I am currently working.
                                     In my free time, you can find me developing Android apps or playing Basketball.
                                

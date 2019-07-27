@@ -14,7 +14,7 @@ export default new Vuex.Store({
       aboveNameText:"Hello! I am",
       nameText:"Ninad Mohite.",
       tagLine:'I build stuff.',
-      belowNameText:"I'm a Software Developer based in Mumbai, India. I specialize in build"+
+      belowNameText:"I'm a Software Developer currently based in Bangalore, India. I specialize in build"+
       "ing and designing high quality, robust software products. "
     },
     AboutData:{
@@ -27,7 +27,7 @@ export default new Vuex.Store({
 
       techStack:[
         "Android App Development", "Actions on Google"       , "Machine Learning/Deep Learning", "FireBase", 
-        "Artificial Intelligence", "Blockchain"              , "Mobile App Designing"          , "VueJS"        
+        "Artificial Intelligence", "Blockchain"              , "Mobile App Designing"          , "React, VueJS"        
       ],
 
       currentJob: "Oyo-Hotels and Home, in Bengaluru. "
