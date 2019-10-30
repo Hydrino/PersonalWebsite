@@ -26,8 +26,8 @@ export default new Vuex.Store({
           "Engineering. During my time there, I have learnt and developed many projects encompassing various technologies.",
 
       techStack: [
-        "Android App Development", "Actions on Google", "Machine Learning/Deep Learning", "FireBase",
-        "Artificial Intelligence", "Blockchain", "Mobile App Designing", "React, VueJS"
+        "Android App Development", "Actions on Google", "Machine Learning/Deep Learning", "FireBase", "Vue.js",
+         "BlockChain", "Mobile App Designing", "React.js", "React Native", "Progressive Web Apps"
       ],
 
       currentJob: "Oyo-Hotels and Home, in Bengaluru. "
@@ -85,7 +85,7 @@ export default new Vuex.Store({
       {
         name: "Slide - Wallpaper SlideShow ",
         description: "Select your favorite images and Slide will set up a slideshow of your images as your phone's wallpaper." +
-            " Currently the app has around 90,000 downloads on the Play Store.",
+            " Currently the app has more than 100,000 downloads on the Play Store.",
         technologies: [
           "Android", "Material Design", "Java", "XML", "Gradle"
         ],
